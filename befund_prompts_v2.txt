@@ -1,0 +1,250 @@
+SYSTEM-PROMPT
+======================================================================
+Du bist ein erfahrener Kardiologe und formulierst EKG-Befunde für die klinische Dokumentation.
+
+Du erhältst ein Faktum-Set mit Messwerten aus einer automatisierten Signalanalyse sowie eine bereits sprachlich eingestufte Verdachtsdiagnose.
+
+AUFBAU DES BEFUNDES — halte diese Reihenfolge strikt ein:
+  1. Rhythmus und Frequenz
+  2. Lagetyp
+  3. Zeiten (PQ, QRS, QTc)
+  4. Q-Zacken (Pardée-Q)
+  5. R-Progredienz, R/S-Umschlag, S-Persistenz in V6
+  6. ST-Strecke
+  7. T-Wellen
+  8. Extrasystolen
+  9. Beurteilung
+
+STIL — so klingt ein echter Befund:
+  "Normokarder Sinusrhythmus, durchschnittliche Frequenz 68/min, Indifferenztyp. PQ-, QRS- sowie QTc-Zeiten normwertig. Kein Pardée-Q. Normale R-Progredienz, keine S-Persistenz in V6, R/S-Umschlag zwischen V3 und V4, keine relevanten ST-Hebungen oder Senkungen, keine T-Negativierungen, keine Extrasystolen.
+  Beurteilung: Unauffälliges Ruhe-EKG."
+
+ABSOLUTE REGELN:
+- Schreibe NIEMALS über das Modell, die KI, eine Klassifikation oder eine Wahrscheinlichkeit. Keine Prozentangaben, keine Formulierungen wie "das Modell sagt" oder "mit 79 % Wahrscheinlichkeit". Der Befund liest sich wie von einem Arzt geschrieben.
+- Die Beurteilung übernimmt WÖRTLICH die im Faktum-Set vorgegebene Formulierung der Verdachtsdiagnose ("Nachweis eines ...", "Wahrscheinlich ...", "Vereinbar mit ..."). Verschärfe und relativiere sie nicht.
+- Verwende AUSSCHLIESSLICH Werte aus dem Faktum-Set. Erfinde nichts.
+- Was im Faktum-Set als "nicht bestimmbar" markiert ist, wird als nicht beurteilbar benannt — niemals als unauffällig.
+- Negativbefunde gehören ausdrücklich in den Text ("Kein Pardée-Q.", "Keine Extrasystolen."), wie im klinischen Befund üblich.
+- Sprache: medizinisches Deutsch, knapp, ohne Füllwörter.
+- Antworte NUR mit dem JSON-Objekt.
+
+SCHEMA
+======================================================================
+{
+  "rhythmus": "<Rhythmusart mit Frequenzattribut, z. B. 'Normokarder Sinusrhythmus'>",
+  "frequenz_bpm": "<Zahl>",
+  "lagetyp": "<Indifferenztyp/Linkstyp/Steiltyp/... oder 'nicht bestimmbar'>",
+  "zeiten": {
+    "pq": "<Wert ms — normwertig/verlängert/verkürzt oder 'nicht bestimmbar'>",
+    "qrs": "<Wert ms — normwertig/verbreitert>",
+    "qtc": "<Wert ms — normwertig/verlängert>"
+  },
+  "q_zacken": "<'Kein Pardée-Q.' oder Beschreibung mit Ableitungsgruppe>",
+  "r_progression": "<R-Progredienz, R/S-Umschlag, S-Persistenz V6>",
+  "st_strecke": "<'Keine relevanten ST-Hebungen oder -Senkungen.' oder Beschreibung>",
+  "t_wellen": "<'Keine T-Negativierungen.' oder Beschreibung>",
+  "extrasystolen": "<'Keine Extrasystolen.' oder Anzahl und Typ>",
+  "befundtext": "<Fließtext, der die obigen Punkte in der genannten Reihenfolge zusammenfasst — Lehrbuchstil>",
+  "beurteilung": "<1-2 Sätze. Beginnt mit der Sicherheitsstufe, z. B. 'Wahrscheinlich Vorderwandinfarkt.' Keine Prozentangaben.>",
+  "limitation": "<optional: was nicht beurteilbar war und warum>"
+}
+
+======================================================================
+USER-PROMPT — EKG 9
+======================================================================
+=== EKG-Faktum-Set (ecg_id: 9) ===
+
+Patient: 55 Jahre, männlich
+Aufzeichnung: 10.0 s, 500 Hz, 12 Ableitungen
+
+RHYTHMUS
+  Frequenz: 61/min (normokard)
+  Regelmäßigkeit: regelmäßig
+  Extrasystolen: keine Extrasystolen
+
+LAGETYP
+  Steiltyp (71°)
+
+ZEITEN
+  PQ:  152 ms — normwertig
+  QRS: 104 ms — normwertig
+  QTc: 381 ms — normwertig
+
+MORPHOLOGIE
+  Q-Zacken:        kein Pardée-Q
+  R-Progression:   R-Progredienz regelrecht, R/S-Umschlag in V3, keine S-Persistenz in V6
+  ST-Strecke:      keine relevanten ST-Hebungen oder -Senkungen
+  T-Wellen:        keine T-Negativierungen
+
+VERDACHTSDIAGNOSE (bereits sprachlich eingestuft — wörtlich übernehmen)
+  - Nachweis eines Normalbefundes
+  Vorbehalt (in die Limitation aufnehmen): Nebenbefundlich lag intraventrikuläre Leitungsverzögerung knapp über der Befundschwelle, jedoch deutlich unterhalb des Normalbefundes.
+
+Erstelle den strukturierten EKG-Befund als JSON nach dem vorgegebenen Schema.
+
+======================================================================
+USER-PROMPT — EKG 157
+======================================================================
+=== EKG-Faktum-Set (ecg_id: 157) ===
+
+Patient: 74 Jahre, weiblich
+Aufzeichnung: 10.0 s, 500 Hz, 12 Ableitungen
+
+RHYTHMUS
+  Frequenz: 63/min (normokard)
+  Regelmäßigkeit: regelmäßig
+  Extrasystolen: keine Extrasystolen
+
+LAGETYP
+  überdrehter Linkstyp (-36°)
+
+ZEITEN
+  PQ:  139 ms — normwertig
+  QRS: 100 ms — normwertig
+  QTc: 394 ms — normwertig
+
+MORPHOLOGIE
+  Q-Zacken:        kein Pardée-Q
+  R-Progression:   R-Progredienz regelrecht, R/S-Umschlag in V4, S-Persistenz in V6
+  ST-Strecke:      keine relevanten ST-Hebungen oder -Senkungen
+  T-Wellen:        keine T-Negativierungen
+
+VERDACHTSDIAGNOSE (bereits sprachlich eingestuft — wörtlich übernehmen)
+  - Nachweis eines Hemiblocks
+  - Vereinbar mit unspezifischen ST-T-Streckenveränderungen
+
+Erstelle den strukturierten EKG-Befund als JSON nach dem vorgegebenen Schema.
+
+======================================================================
+USER-PROMPT — EKG 175
+======================================================================
+=== EKG-Faktum-Set (ecg_id: 175) ===
+
+Patient: 64 Jahre, männlich
+Aufzeichnung: 10.0 s, 500 Hz, 12 Ableitungen
+
+RHYTHMUS
+  Frequenz: 55/min (bradykard)
+  Regelmäßigkeit: regelmäßig
+  Extrasystolen: keine Extrasystolen
+
+LAGETYP
+  Linkstyp (5°)
+
+ZEITEN
+  PQ:  85 ms — verkürzt
+  QRS: nicht bestimmbar (Messartefakt oder nicht auswertbar)
+  QTc: 460 ms — verlängert
+
+MORPHOLOGIE
+  Q-Zacken:        kein Pardée-Q
+  R-Progression:   R-Progredienz regelrecht, R/S-Umschlag in V5, keine S-Persistenz in V6
+  ST-Strecke:      keine relevanten ST-Hebungen oder -Senkungen
+  T-Wellen:        keine T-Negativierungen
+
+VERDACHTSDIAGNOSE (bereits sprachlich eingestuft — wörtlich übernehmen)
+  - Nachweis eines Hinterwandinfarktes
+
+Erstelle den strukturierten EKG-Befund als JSON nach dem vorgegebenen Schema.
+
+======================================================================
+USER-PROMPT — EKG 180
+======================================================================
+=== EKG-Faktum-Set (ecg_id: 180) ===
+
+Patient: 81 Jahre, weiblich
+Aufzeichnung: 10.0 s, 500 Hz, 12 Ableitungen
+
+RHYTHMUS
+  Frequenz: 93/min (normokard)
+  Regelmäßigkeit: regelmäßig
+  Extrasystolen: keine Extrasystolen
+
+LAGETYP
+  Linkstyp (-21°)
+
+ZEITEN
+  PQ:  190 ms — normwertig
+  QRS: nicht bestimmbar (Messartefakt oder nicht auswertbar)
+  QTc: 432 ms — normwertig
+
+MORPHOLOGIE
+  Q-Zacken:        pathologische Q-Zacken in den Ableitungsgruppen: inferior, anteroseptal (Ableitungen: III, aVF, V1, V2, V3)
+  R-Progression:   verzögerte R-Progredienz, R/S-Umschlag in V5, keine S-Persistenz in V6
+  ST-Strecke:      ST-Hebungen in aVR, V1, V2, V3 (Gruppen: anteroseptal); ST-Senkungen in I, II, aVF, V4, V5, V6 (Gruppen: inferior, lateral)
+  T-Wellen:        T-Negativierungen in I, aVL
+
+VERDACHTSDIAGNOSE (bereits sprachlich eingestuft — wörtlich übernehmen)
+  - Nachweis eines kompletten Linksschenkelblocks
+  - Wahrscheinlich eine linksventrikuläre Hypertrophie
+
+Erstelle den strukturierten EKG-Befund als JSON nach dem vorgegebenen Schema.
+
+======================================================================
+USER-PROMPT — EKG 2433
+======================================================================
+=== EKG-Faktum-Set (ecg_id: 2433) ===
+
+Patient: 43 Jahre, weiblich
+Aufzeichnung: 10.0 s, 500 Hz, 12 Ableitungen
+
+RHYTHMUS
+  Frequenz: 51/min (bradykard)
+  Regelmäßigkeit: regelmäßig
+  Extrasystolen: keine Extrasystolen
+
+LAGETYP
+  Linkstyp (29°)
+
+ZEITEN
+  PQ:  210 ms — verlängert
+  QRS: 150 ms — verbreitert
+  QTc: 392 ms — normwertig
+
+MORPHOLOGIE
+  Q-Zacken:        kein Pardée-Q
+  R-Progression:   R-Progredienz regelrecht, R/S-Umschlag in V2, keine S-Persistenz in V6
+  ST-Strecke:      ST-Senkungen in I, II, aVL, V4, V5, V6 (Gruppen: lateral)
+  T-Wellen:        keine T-Negativierungen
+
+VERDACHTSDIAGNOSE (bereits sprachlich eingestuft — wörtlich übernehmen)
+  - Nachweis eines kompletten Rechtsschenkelblocks
+  - Wahrscheinlich eine Hypertrophie oder Belastung
+
+Erstelle den strukturierten EKG-Befund als JSON nach dem vorgegebenen Schema.
+
+======================================================================
+USER-PROMPT — EKG 271
+======================================================================
+=== EKG-Faktum-Set (ecg_id: 271) ===
+
+Patient: 75 Jahre, männlich
+Aufzeichnung: 10.0 s, 500 Hz, 12 Ableitungen
+
+RHYTHMUS
+  Frequenz: 94/min (normokard)
+  Regelmäßigkeit: regelmäßig
+  Extrasystolen: 1 vorzeitige Aktion(en), supraventrikulär (schmaler Kammerkomplex)
+
+LAGETYP
+  Linkstyp (30°)
+
+ZEITEN
+  PQ:  118 ms — verkürzt
+  QRS: 110 ms — normwertig
+  QTc: 301 ms — verkürzt
+
+MORPHOLOGIE
+  Q-Zacken:        pathologische Q-Zacken in den Ableitungsgruppen: anteroseptal (Ableitungen: V1, V2, V3)
+  R-Progression:   verzögerte R-Progredienz, R/S-Umschlag in V5, keine S-Persistenz in V6
+  ST-Strecke:      keine relevanten ST-Hebungen oder -Senkungen
+  T-Wellen:        T-Negativierungen in V6
+
+VERDACHTSDIAGNOSE (bereits sprachlich eingestuft — wörtlich übernehmen)
+  - Nachweis eines Vorderwandinfarktes
+  - Nachweis einer Ischämie
+  - Nachweis einer linksventrikulären Hypertrophie
+  - Wahrscheinlich eine intraventrikuläre Leitungsverzögerung
+
+Erstelle den strukturierten EKG-Befund als JSON nach dem vorgegebenen Schema.
+

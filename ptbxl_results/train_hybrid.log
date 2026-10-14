@@ -1,0 +1,86 @@
+
+=== Lade PTB-XL Metadaten ===
+Lade gecachte 500-Hz-Signale …
+Signal-Shape: (21799, 5000, 12)   (N × Zeitpunkte × Ableitungen)
+
+=== Berechne Hybrid-Labels (19 Zielklassen) ===
+Klassen (19): ['AMI', 'CD_other', 'CLBBB', 'CRBBB', 'HYP_other', 'IMI', 'IRBBB', 'ISCA', 'ISCI', 'ISC_', 'IVCD', 'LAFB/LPFB', 'LAO/LAE', 'LVH', 'MI_other', 'NORM', 'NST_', 'STTC', '_AVB']
+Verworfen (keine Zielklasse): 411  |  verbleibend: 21388
+Klassenhäufigkeit (gesamt):   {'AMI': np.int64(3078), 'CD_other': np.int64(156), 'CLBBB': np.int64(536), 'CRBBB': np.int64(541), 'HYP_other': np.int64(237), 'IMI': np.int64(3271), 'IRBBB': np.int64(1118), 'ISCA': np.int64(941), 'ISCI': np.int64(397), 'ISC_': np.int64(1272), 'IVCD': np.int64(787), 'LAFB/LPFB': np.int64(1797), 'LAO/LAE': np.int64(426), 'LVH': np.int64(2132), 'MI_other': np.int64(217), 'NORM': np.int64(9514), 'NST_': np.int64(767), 'STTC': np.int64(2239), '_AVB': np.int64(823)}
+
+Split: Train=17084, Val=2146, Test=2158
+
+=== Training auf: mps ===
+Modell-Parameter: 727,059
+pos_weight (gedeckelt @ 10): {'AMI': np.float64(5.9), 'CD_other': np.float64(10.0), 'CLBBB': np.float64(10.0), 'CRBBB': np.float64(10.0), 'HYP_other': np.float64(10.0), 'IMI': np.float64(5.5), 'IRBBB': np.float64(10.0), 'ISCA': np.float64(10.0), 'ISCI': np.float64(10.0), 'ISC_': np.float64(10.0), 'IVCD': np.float64(10.0), 'LAFB/LPFB': np.float64(10.0), 'LAO/LAE': np.float64(10.0), 'LVH': np.float64(9.0), 'MI_other': np.float64(10.0), 'NORM': np.float64(1.2), 'NST_': np.float64(10.0), 'STTC': np.float64(8.5), '_AVB': np.float64(10.0)}
+
+Epoche  | Train Loss | Val AUROC (macro)
+---------------------------------------------
+    1/30 | 0.9032     | 0.8190 ← best
+    2/30 | 0.7830     | 0.8530 ← best
+    3/30 | 0.6174     | 0.8788 ← best
+    4/30 | 0.4828     | 0.8966 ← best
+    5/30 | 0.4405     | 0.9047 ← best
+    6/30 | 0.4190     | 0.9084 ← best
+    7/30 | 0.4036     | 0.9113 ← best
+    8/30 | 0.3924     | 0.9170 ← best
+    9/30 | 0.3839     | 0.9154
+   10/30 | 0.3742     | 0.9227 ← best
+   11/30 | 0.3687     | 0.9231 ← best
+   12/30 | 0.3575     | 0.9204
+   13/30 | 0.3553     | 0.9273 ← best
+   14/30 | 0.3462     | 0.9281 ← best
+   15/30 | 0.3424     | 0.9282 ← best
+   16/30 | 0.3343     | 0.9299 ← best
+   17/30 | 0.3252     | 0.9304 ← best
+   18/30 | 0.3191     | 0.9302
+   19/30 | 0.3116     | 0.9332 ← best
+   20/30 | 0.3026     | 0.9282
+   21/30 | 0.2914     | 0.9364 ← best
+   22/30 | 0.2808     | 0.9367 ← best
+   23/30 | 0.2691     | 0.9389 ← best
+   24/30 | 0.2559     | 0.9373
+   25/30 | 0.2461     | 0.9336
+   26/30 | 0.2341     | 0.9367
+   27/30 | 0.2271     | 0.9364
+   28/30 | 0.2203     | 0.9365
+   29/30 | 0.2161     | 0.9371
+   30/30 | 0.2145     | 0.9356
+
+=== Test-Evaluation (bestes Modell: Val-AUC 0.9389) ===
+
+=== Random Forest Baseline (Wavelet-Features) ===
+Gecachte Wavelet-Features wiederverwendet.
+Feature-Dimensionalität: 576
+Trainiere Random Forest …
+
+==============================================================================
+  AUROC pro Klasse – Test-Set (Fold 10)  [500 Hz, Hybrid-19]
+==============================================================================
+Klasse      Super  n_test   1D-ResNet  RandomForest
+------------------------------------------------------------------------------
+LAFB/LPFB   CD        179      0.9714        0.9213
+IRBBB       CD        112      0.9820        0.8160
+_AVB        CD         82      0.9710        0.6928
+IVCD        CD         79      0.7588        0.6385
+CLBBB       CD         54      0.9988        0.9944
+CRBBB       CD         54      0.9981        0.9931
+CD_other    CD         16      0.8669        0.7745
+LVH         HYP       214      0.9507        0.9121
+LAO/LAE     HYP        42      0.8303        0.6060
+HYP_other   HYP        23      0.9343        0.8204
+IMI         MI        327      0.9448        0.7829
+AMI         MI        306      0.9688        0.8459
+MI_other    MI         22      0.9188        0.6935
+NORM        NORM      963      0.9453        0.8785
+STTC        STTC      222      0.8985        0.7596
+ISC_        STTC      128      0.9612        0.8718
+ISCA        STTC       93      0.9355        0.7577
+NST_        STTC       77      0.8509        0.6525
+ISCI        STTC       40      0.9315        0.6954
+------------------------------------------------------------------------------
+Macro                3033      0.9272        0.7951
+==============================================================================
+
+Ergebnisse gespeichert: /Users/johannesclaudio/Documents/Doktorarbeit/Doktorarbeit 2.0/ptbxl_results/auroc_comparison_hybrid.csv
+Modell gespeichert:     /Users/johannesclaudio/Documents/Doktorarbeit/Doktorarbeit 2.0/ptbxl_results/best_resnet1d_hybrid.pt

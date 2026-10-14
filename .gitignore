@@ -1,0 +1,43 @@
+# ── Daten (nicht ins Repository) ────────────────────────────────────────────
+# PTB-XL ist öffentlich verfügbar und wird separat bezogen (13 GB).
+ptb-xl-a-large-publicly-available-electrocardiography-dataset-*/
+*.npy
+*.npz
+
+# Fremder Referenzcode (Benchmark-Repository von Strodthoff et al.)
+ecg_ptbxl_benchmarking/
+
+# ── Zwischenergebnisse ──────────────────────────────────────────────────────
+ptbxl_results/rf_features.pkl
+ptbxl_results/error_plots/
+ptbxl_results/experiment_bild_vs_pipeline/ekg_bilder/
+ptbxl_results/befund_input_*.json
+__pycache__/
+*.pyc
+
+# ── Persönliches / Schriftverkehr ───────────────────────────────────────────
+Antwort_an_Claas.*
+Besprechungs_Agenda_Betreuer.pdf
+Betreuer_Bericht_Doktorarbeit.pdf
+.DS_Store
+
+# Lokale Werkzeug-Einstellungen
+.claude/
+
+# Antragsunterlagen (gehen separat, nicht in das Code-Repository)
+Datennutzungsantrag_*.md
+
+# Interne Unterlagen (Betreuerkommunikation, Antragsentwürfe)
+BETREUER_ANTWORTEN.md
+Datennutzungsantrag_*
+Mail_an_Claas_*
+
+# Berichte an die Betreuung und überholte Arbeitsstände
+Projektbericht_*
+PROJEKT_DOKUMENTATION.md
+befunde.md
+befunde_batch.md
+befund_results.json
+batch_fact_sets.json
+example_fact_sets.json
+ptbxl_results/auroc_comparison.csv

@@ -1,0 +1,64 @@
+{
+  "fit_c": 0.3664490385111591,
+  "sensitivity": [
+    {
+      "n_min": 1,
+      "eigenstaendig": 23,
+      "buendel": 0,
+      "zielklassen": 23,
+      "kleinste_klasse": 2
+    },
+    {
+      "n_min": 10,
+      "eigenstaendig": 19,
+      "buendel": 1,
+      "zielklassen": 20,
+      "kleinste_klasse": 10
+    },
+    {
+      "n_min": 20,
+      "eigenstaendig": 17,
+      "buendel": 1,
+      "zielklassen": 18,
+      "kleinste_klasse": 20
+    },
+    {
+      "n_min": 30,
+      "eigenstaendig": 16,
+      "buendel": 0,
+      "zielklassen": 16,
+      "kleinste_klasse": 40
+    },
+    {
+      "n_min": 50,
+      "eigenstaendig": 14,
+      "buendel": 1,
+      "zielklassen": 15,
+      "kleinste_klasse": 54
+    },
+    {
+      "n_min": 100,
+      "eigenstaendig": 8,
+      "buendel": 2,
+      "zielklassen": 10,
+      "kleinste_klasse": 112
+    },
+    {
+      "n_min": 200,
+      "eigenstaendig": 5,
+      "buendel": 2,
+      "zielklassen": 7,
+      "kleinste_klasse": 214
+    }
+  ],
+  "schema_abgleich": {
+    "implementiert_zielklassen": 19,
+    "strikte_regel_zielklassen": 18,
+    "abweichung_gebuendelt_trotz_schwelle": {
+      "LMI": 20
+    },
+    "abweichung_buendel_unter_schwelle": {
+      "CD_other": 16
+    }
+  }
+}

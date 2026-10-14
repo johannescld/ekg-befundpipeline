@@ -1,0 +1,5803 @@
+[
+  {
+    "ecg_id": 1220,
+    "schema_version": 2,
+    "patient": {
+      "age_years": 83,
+      "sex": "weiblich"
+    },
+    "acquisition": {
+      "sampling_rate_hz": 500,
+      "duration_s": 10.0,
+      "n_leads": 12
+    },
+    "classical_features": {
+      "hr_bpm": 61.7,
+      "pr_interval_ms": 99.3,
+      "qrs_duration_ms": 178.2,
+      "qt_interval_ms": 486.0,
+      "qtc_bazett_ms": 492.7
+    },
+    "morphologie": {
+      "methodik": {
+        "amplituden": "Median-Schlag über alle Herzaktionen (Beat-Averaging)",
+        "nulllinie": "PQ-Segment (30-5 ms vor QRS-Beginn)",
+        "st_messpunkt": "J-Punkt + 60 ms"
+      },
+      "rhythmus": {
+        "beurteilbar": true,
+        "hr_mean_bpm": 61.0,
+        "rr_median_ms": 978.0,
+        "rr_variationskoeffizient": 0.012,
+        "regelmaessig": true,
+        "extrasystolen_anzahl": 0,
+        "extrasystolen_mit_kompensatorischer_pause": 0,
+        "extrasystolen_typ": null
+      },
+      "fiducial_offsets_samples": {
+        "qrs_onset": -7,
+        "qrs_offset": 34,
+        "t_offset": 186,
+        "t_peak": 153,
+        "qrs_quelle": "global (12 Ableitungen)"
+      },
+      "intervalle_aus_fiducials": {
+        "qrs_dauer_ms": 92.0,
+        "hinweis": "gegen CLBBB/CRBBB kalibriert; unterschätzt schmale Komplexe systematisch um ca. 20 ms — für den Befundtext ist der Wert aus build_fact_set massgeblich"
+      },
+      "lagetyp": {
+        "beurteilbar": true,
+        "achse_grad": -35.0,
+        "lagetyp": "überdrehter Linkstyp"
+      },
+      "q_zacken": {
+        "beurteilbar": true,
+        "pathologische_q_ableitungen": [
+          "V1"
+        ],
+        "betroffene_gruppen": [],
+        "pardee_q_vorhanden": false,
+        "details": {
+          "I": {
+            "q_amplitude_mv": -0.05,
+            "q_dauer_ms": 2.0,
+            "r_amplitude_mv": 1.01,
+            "muster": "qR",
+            "lagetypbedingt": false,
+            "pathologisch": false
+          },
+          "aVL": {
+            "q_amplitude_mv": -0.11,
+            "q_dauer_ms": 14.0,
+            "r_amplitude_mv": 1.11,
+            "muster": "qR",
+            "lagetypbedingt": false,
+            "pathologisch": false
+          },
+          "V1": {
+            "q_amplitude_mv": -0.99,
+            "q_dauer_ms": 68.0,
+            "r_amplitude_mv": 0.0,
+            "muster": "QS",
+            "lagetypbedingt": false,
+            "pathologisch": true
+          }
+        }
+      },
+      "r_progression": {
+        "beurteilbar": true,
+        "r_amplituden_mv": {
+          "V1": 0.0,
+          "V2": 0.2,
+          "V3": 1.07,
+          "V4": 1.08,
+          "V5": 0.78,
+          "V6": 0.5
+        },
+        "s_amplituden_mv": {
+          "V1": 0.0,
+          "V2": 0.35,
+          "V3": 0.55,
+          "V4": 0.68,
+          "V5": 0.42,
+          "V6": 0.32
+        },
+        "rs_verhaeltnis": {
+          "V1": null,
+          "V2": 0.56,
+          "V3": 1.94,
+          "V4": 1.6,
+          "V5": 1.85,
+          "V6": 1.58
+        },
+        "qrs_muster": {
+          "V1": "QS",
+          "V2": "rS",
+          "V3": "Rs",
+          "V4": "Rs",
+          "V5": "Rs",
+          "V6": "Rs"
+        },
+        "rs_umschlag": "V3",
+        "rs_umschlag_normal": true,
+        "r_progression_normal": true,
+        "s_persistenz_v6": true,
+        "s_amplitude_v6_mv": 0.32
+      },
+      "st_strecke": {
+        "beurteilbar": true,
+        "messpunkt": "J-Punkt + 60 ms",
+        "abweichung_mv": {
+          "I": -0.03,
+          "II": 0.01,
+          "III": 0.05,
+          "aVR": 0.01,
+          "aVL": -0.04,
+          "aVF": 0.02,
+          "V1": 0.04,
+          "V2": 0.02,
+          "V3": 0.0,
+          "V4": -0.01,
+          "V5": 0.0,
+          "V6": -0.0
+        },
+        "hebungen": [],
+        "senkungen": [],
+        "hebung_gruppen": [],
+        "senkung_gruppen": [],
+        "relevante_hebung": false,
+        "relevante_senkung": false
+      },
+      "t_wellen": {
+        "beurteilbar": true,
+        "t_amplituden_mv": {
+          "I": 0.07,
+          "II": 0.18,
+          "III": 0.11,
+          "aVR": -0.14,
+          "aVL": -0.02,
+          "aVF": 0.13,
+          "V1": -0.07,
+          "V2": 0.12,
+          "V3": 0.14,
+          "V4": 0.14,
+          "V5": 0.15,
+          "V6": 0.12
+        },
+        "negative_ableitungen": [
+          "aVR"
+        ],
+        "pathologisch_negativ": [],
+        "betroffene_gruppen": [],
+        "relevante_negativierung": false
+      },
+      "beurteilbar": true
+    },
+    "diagnose": {
+      "formulierungen": [
+        "Nachweis eines Hemiblocks",
+        "Wahrscheinlich unspezifische ST-T-Streckenveränderungen",
+        "Wahrscheinlich ein Myokardinfarkt"
+      ],
+      "gemeldet": [
+        {
+          "klasse": "LAFB/LPFB",
+          "bezeichnung": "linksanteriorer/-posteriorer Hemiblock",
+          "p": 0.86,
+          "stufe": "sicher",
+          "ebene": "zielklasse"
+        },
+        {
+          "klasse": "STTC",
+          "bezeichnung": "unspezifische ST-T-Veränderungen",
+          "p": 0.832,
+          "stufe": "wahrscheinlich",
+          "ebene": "zielklasse"
+        },
+        {
+          "klasse": "MI",
+          "bezeichnung": "Myokardinfarkt",
+          "p": 0.665,
+          "stufe": "wahrscheinlich",
+          "ebene": "superklasse (Konfidenz-Gating)"
+        }
+      ],
+      "konfidenz_gating": [
+        {
+          "von": "AMI",
+          "auf": "MI",
+          "p_subklasse": 0.619,
+          "p_superklasse": 0.665
+        }
+      ],
+      "verworfen": [
+        {
+          "klasse": "IVCD",
+          "p": 0.674,
+          "grund": "schwächer als LAFB/LPFB in derselben Superklasse CD"
+        },
+        {
+          "klasse": "ISCA",
+          "p": 0.579,
+          "grund": "schwächer als STTC in derselben Superklasse STTC"
+        }
+      ]
+    },
+    "true_classes": [
+      "LAFB/LPFB",
+      "NORM"
+    ],
+    "qualitaetssicherung": {
+      "resnet_probabilities": {
+        "LAFB/LPFB": 0.86,
+        "STTC": 0.832,
+        "IVCD": 0.674,
+        "AMI": 0.619,
+        "ISCA": 0.579,
+        "_AVB": 0.454,
+        "LVH": 0.45,
+        "NST_": 0.39,
+        "ISC_": 0.316,
+        "LAO/LAE": 0.206,
+        "MI_other": 0.11
+      },
+      "confidence": "hoch",
+      "befund_schwelle": 0.5,
+      "gating_schwelle": 0.65
+    },
+    "qrs_kreuzpruefung": {
+      "messweg_ableitung_II_ms": 178.2,
+      "messweg_12_ableitungen_ms": 92.0,
+      "verwertbar": false,
+      "grund": "Messwege widersprechen sich: 178 ms gegen 92 ms (einmal schmal, einmal verbreitert)"
+    },
+    "pipeline_stage": "stufe_1_output_v2",
+    "plausibility": {
+      "pro_parameter": {
+        "hr_bpm": {
+          "value": 61.7,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "normal",
+          "kommentar": "Herzfrequenz 61.7 bpm (normal)."
+        },
+        "pr_interval_ms": {
+          "value": 99.3,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "unter_norm",
+          "kommentar": "PQ-Intervall 99.3 ms (unter norm)."
+        },
+        "qrs_duration_ms": {
+          "value": 178.2,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "ueber_norm",
+          "kommentar": "QRS-Dauer 178.2 ms (ueber norm)."
+        },
+        "qt_interval_ms": {
+          "value": 486.0,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "ueber_norm",
+          "kommentar": "QT-Intervall 486.0 ms (ueber norm)."
+        },
+        "qtc_bazett_ms": {
+          "value": 492.7,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "ueber_norm",
+          "kommentar": "QTc (Bazett) 492.7 ms (ueber norm)."
+        }
+      },
+      "warnungen": [
+        "PQ-Intervall 99.3 ms (unter norm).",
+        "QRS-Dauer 178.2 ms (ueber norm).",
+        "QT-Intervall 486.0 ms (ueber norm).",
+        "QTc (Bazett) 492.7 ms (ueber norm)."
+      ],
+      "artefakte": [],
+      "n_artefakte": 0,
+      "alle_verwertbar": true
+    },
+    "classical_features_verwertbar": {
+      "hr_bpm": 61.7,
+      "pr_interval_ms": 99.3,
+      "qrs_duration_ms": null,
+      "qt_interval_ms": 486.0,
+      "qtc_bazett_ms": 492.7
+    }
+  },
+  {
+    "ecg_id": 2055,
+    "schema_version": 2,
+    "patient": {
+      "age_years": 70,
+      "sex": "weiblich"
+    },
+    "acquisition": {
+      "sampling_rate_hz": 500,
+      "duration_s": 10.0,
+      "n_leads": 12
+    },
+    "classical_features": {
+      "hr_bpm": 117.3,
+      "pr_interval_ms": 99.8,
+      "qrs_duration_ms": 114.4,
+      "qt_interval_ms": 257.8,
+      "qtc_bazett_ms": 359.7
+    },
+    "morphologie": {
+      "methodik": {
+        "amplituden": "Median-Schlag über alle Herzaktionen (Beat-Averaging)",
+        "nulllinie": "PQ-Segment (30-5 ms vor QRS-Beginn)",
+        "st_messpunkt": "J-Punkt + 60 ms"
+      },
+      "rhythmus": {
+        "beurteilbar": true,
+        "hr_mean_bpm": 114.0,
+        "rr_median_ms": 526.0,
+        "rr_variationskoeffizient": 0.176,
+        "regelmaessig": false,
+        "extrasystolen_anzahl": 4,
+        "extrasystolen_mit_kompensatorischer_pause": 0,
+        "extrasystolen_typ": "supraventrikulär (schmaler Kammerkomplex)"
+      },
+      "fiducial_offsets_samples": {
+        "qrs_onset": -9,
+        "qrs_offset": 22,
+        "t_offset": 52,
+        "t_peak": 39,
+        "qrs_quelle": "global (12 Ableitungen)"
+      },
+      "intervalle_aus_fiducials": {
+        "qrs_dauer_ms": 244.0,
+        "hinweis": "gegen CLBBB/CRBBB kalibriert; unterschätzt schmale Komplexe systematisch um ca. 20 ms — für den Befundtext ist der Wert aus build_fact_set massgeblich"
+      },
+      "lagetyp": {
+        "beurteilbar": true,
+        "achse_grad": 85.0,
+        "lagetyp": "Steiltyp"
+      },
+      "q_zacken": {
+        "beurteilbar": true,
+        "pathologische_q_ableitungen": [
+          "V1",
+          "V2",
+          "V3"
+        ],
+        "betroffene_gruppen": [
+          "anteroseptal"
+        ],
+        "pardee_q_vorhanden": true,
+        "details": {
+          "aVL": {
+            "q_amplitude_mv": -0.24,
+            "q_dauer_ms": 30.0,
+            "r_amplitude_mv": 0.1,
+            "muster": "qR",
+            "lagetypbedingt": false,
+            "pathologisch": false
+          },
+          "V1": {
+            "q_amplitude_mv": -0.59,
+            "q_dauer_ms": 48.0,
+            "r_amplitude_mv": 0.0,
+            "muster": "QS",
+            "lagetypbedingt": false,
+            "pathologisch": true
+          },
+          "V2": {
+            "q_amplitude_mv": -1.04,
+            "q_dauer_ms": 64.0,
+            "r_amplitude_mv": 0.13,
+            "muster": "qR",
+            "lagetypbedingt": false,
+            "pathologisch": true
+          },
+          "V3": {
+            "q_amplitude_mv": -1.83,
+            "q_dauer_ms": 70.0,
+            "r_amplitude_mv": 0.25,
+            "muster": "qR",
+            "lagetypbedingt": false,
+            "pathologisch": true
+          }
+        }
+      },
+      "r_progression": {
+        "beurteilbar": true,
+        "r_amplituden_mv": {
+          "V1": 0.0,
+          "V2": 0.0,
+          "V3": 0.0,
+          "V4": 0.53,
+          "V5": 0.84,
+          "V6": 0.47
+        },
+        "s_amplituden_mv": {
+          "V1": 0.0,
+          "V2": 0.0,
+          "V3": 0.0,
+          "V4": 1.08,
+          "V5": 0.26,
+          "V6": 0.08
+        },
+        "rs_verhaeltnis": {
+          "V1": null,
+          "V2": null,
+          "V3": null,
+          "V4": 0.49,
+          "V5": 3.3,
+          "V6": 5.85
+        },
+        "qrs_muster": {
+          "V1": "QS",
+          "V2": "QS",
+          "V3": "QS",
+          "V4": "rS",
+          "V5": "Rs",
+          "V6": "Rs"
+        },
+        "rs_umschlag": "V5",
+        "rs_umschlag_normal": false,
+        "r_progression_normal": false,
+        "s_persistenz_v6": false,
+        "s_amplitude_v6_mv": 0.08
+      },
+      "st_strecke": {
+        "beurteilbar": true,
+        "messpunkt": "J-Punkt + 60 ms",
+        "abweichung_mv": {
+          "I": -0.03,
+          "II": -0.11,
+          "III": -0.08,
+          "aVR": 0.07,
+          "aVL": 0.03,
+          "aVF": -0.09,
+          "V1": 0.04,
+          "V2": -0.01,
+          "V3": 0.1,
+          "V4": -0.09,
+          "V5": -0.13,
+          "V6": -0.06
+        },
+        "hebungen": [],
+        "senkungen": [
+          "II",
+          "V5"
+        ],
+        "hebung_gruppen": [],
+        "senkung_gruppen": [],
+        "relevante_hebung": false,
+        "relevante_senkung": false
+      },
+      "t_wellen": {
+        "beurteilbar": true,
+        "t_amplituden_mv": {
+          "I": -0.03,
+          "II": -0.09,
+          "III": -0.09,
+          "aVR": 0.07,
+          "aVL": 0.03,
+          "aVF": -0.09,
+          "V1": 0.04,
+          "V2": -0.04,
+          "V3": 0.06,
+          "V4": -0.09,
+          "V5": -0.13,
+          "V6": -0.06
+        },
+        "negative_ableitungen": [
+          "V5"
+        ],
+        "pathologisch_negativ": [
+          "V5"
+        ],
+        "betroffene_gruppen": [],
+        "relevante_negativierung": true
+      },
+      "beurteilbar": true
+    },
+    "diagnose": {
+      "formulierungen": [
+        "Nachweis einer Ischämie der Hinterwand",
+        "Nachweis eines Vorderwandinfarktes"
+      ],
+      "gemeldet": [
+        {
+          "klasse": "ISCI",
+          "bezeichnung": "Ischämie, inferiore Ableitungen",
+          "p": 0.971,
+          "stufe": "sicher",
+          "ebene": "zielklasse"
+        },
+        {
+          "klasse": "AMI",
+          "bezeichnung": "Vorderwandinfarkt",
+          "p": 0.967,
+          "stufe": "sicher",
+          "ebene": "zielklasse"
+        }
+      ],
+      "konfidenz_gating": [],
+      "verworfen": [
+        {
+          "klasse": "ISCA",
+          "p": 0.893,
+          "grund": "schwächer als ISCI in derselben Superklasse STTC"
+        },
+        {
+          "klasse": "ISC_",
+          "p": 0.53,
+          "grund": "schwächer als ISCI in derselben Superklasse STTC"
+        },
+        {
+          "klasse": "MI_other",
+          "p": 0.702,
+          "grund": "schwächer als AMI in derselben Superklasse MI"
+        }
+      ]
+    },
+    "true_classes": [
+      "AMI",
+      "ISCI",
+      "MI_other"
+    ],
+    "qualitaetssicherung": {
+      "resnet_probabilities": {
+        "ISCI": 0.971,
+        "AMI": 0.967,
+        "ISCA": 0.893,
+        "MI_other": 0.702,
+        "ISC_": 0.53,
+        "STTC": 0.424,
+        "NST_": 0.342,
+        "LVH": 0.25,
+        "LAFB/LPFB": 0.128,
+        "_AVB": 0.126
+      },
+      "confidence": "hoch",
+      "befund_schwelle": 0.5,
+      "gating_schwelle": 0.65
+    },
+    "qrs_kreuzpruefung": {
+      "messweg_ableitung_II_ms": 114.4,
+      "messweg_12_ableitungen_ms": 244.0,
+      "verwertbar": false,
+      "grund": "Messwege widersprechen sich: 114 ms gegen 244 ms (einmal schmal, einmal verbreitert)"
+    },
+    "pipeline_stage": "stufe_1_output_v2",
+    "plausibility": {
+      "pro_parameter": {
+        "hr_bpm": {
+          "value": 117.3,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "ueber_norm",
+          "kommentar": "Herzfrequenz 117.3 bpm (ueber norm)."
+        },
+        "pr_interval_ms": {
+          "value": 99.8,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "unter_norm",
+          "kommentar": "PQ-Intervall 99.8 ms (unter norm)."
+        },
+        "qrs_duration_ms": {
+          "value": 114.4,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "normal",
+          "kommentar": "QRS-Dauer 114.4 ms (normal)."
+        },
+        "qt_interval_ms": {
+          "value": 257.8,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "unter_norm",
+          "kommentar": "QT-Intervall 257.8 ms (unter norm)."
+        },
+        "qtc_bazett_ms": {
+          "value": 359.7,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "normal",
+          "kommentar": "QTc (Bazett) 359.7 ms (normal)."
+        }
+      },
+      "warnungen": [
+        "Herzfrequenz 117.3 bpm (ueber norm).",
+        "PQ-Intervall 99.8 ms (unter norm).",
+        "QT-Intervall 257.8 ms (unter norm)."
+      ],
+      "artefakte": [],
+      "n_artefakte": 0,
+      "alle_verwertbar": true
+    },
+    "classical_features_verwertbar": {
+      "hr_bpm": 117.3,
+      "pr_interval_ms": 99.8,
+      "qrs_duration_ms": null,
+      "qt_interval_ms": 257.8,
+      "qtc_bazett_ms": 359.7
+    }
+  },
+  {
+    "ecg_id": 2221,
+    "schema_version": 2,
+    "patient": {
+      "age_years": 70,
+      "sex": "weiblich"
+    },
+    "acquisition": {
+      "sampling_rate_hz": 500,
+      "duration_s": 10.0,
+      "n_leads": 12
+    },
+    "classical_features": {
+      "hr_bpm": 79.2,
+      "pr_interval_ms": 91.4,
+      "qrs_duration_ms": 137.5,
+      "qt_interval_ms": 273.0,
+      "qtc_bazett_ms": 312.4
+    },
+    "morphologie": {
+      "methodik": {
+        "amplituden": "Median-Schlag über alle Herzaktionen (Beat-Averaging)",
+        "nulllinie": "PQ-Segment (30-5 ms vor QRS-Beginn)",
+        "st_messpunkt": "J-Punkt + 60 ms"
+      },
+      "rhythmus": {
+        "beurteilbar": true,
+        "hr_mean_bpm": 79.0,
+        "rr_median_ms": 760.0,
+        "rr_variationskoeffizient": 0.143,
+        "regelmaessig": true,
+        "extrasystolen_anzahl": 1,
+        "extrasystolen_mit_kompensatorischer_pause": 0,
+        "extrasystolen_typ": "ventrikulär (breiter Kammerkomplex)"
+      },
+      "fiducial_offsets_samples": {
+        "qrs_onset": -50,
+        "qrs_offset": 23,
+        "t_offset": 74,
+        "t_peak": 65,
+        "qrs_quelle": "Ableitung II (dwt)"
+      },
+      "intervalle_aus_fiducials": {
+        "qrs_dauer_ms": null,
+        "hinweis": "gegen CLBBB/CRBBB kalibriert; unterschätzt schmale Komplexe systematisch um ca. 20 ms — für den Befundtext ist der Wert aus build_fact_set massgeblich"
+      },
+      "lagetyp": {
+        "beurteilbar": true,
+        "achse_grad": -58.0,
+        "lagetyp": "überdrehter Linkstyp"
+      },
+      "q_zacken": {
+        "beurteilbar": true,
+        "pathologische_q_ableitungen": [
+          "III",
+          "aVF"
+        ],
+        "betroffene_gruppen": [
+          "inferior"
+        ],
+        "pardee_q_vorhanden": true,
+        "details": {
+          "I": {
+            "q_amplitude_mv": -0.06,
+            "q_dauer_ms": 42.0,
+            "r_amplitude_mv": 0.4,
+            "muster": "qRs",
+            "lagetypbedingt": false,
+            "pathologisch": false
+          },
+          "II": {
+            "q_amplitude_mv": -0.07,
+            "q_dauer_ms": 62.0,
+            "r_amplitude_mv": 0.25,
+            "muster": "qRs",
+            "lagetypbedingt": false,
+            "pathologisch": false
+          },
+          "III": {
+            "q_amplitude_mv": -0.19,
+            "q_dauer_ms": 38.0,
+            "r_amplitude_mv": 0.0,
+            "muster": "QS",
+            "lagetypbedingt": false,
+            "pathologisch": true
+          },
+          "aVF": {
+            "q_amplitude_mv": -0.06,
+            "q_dauer_ms": 28.0,
+            "r_amplitude_mv": 0.0,
+            "muster": "QS",
+            "lagetypbedingt": false,
+            "pathologisch": true
+          }
+        }
+      },
+      "r_progression": {
+        "beurteilbar": true,
+        "r_amplituden_mv": {
+          "V1": 0.11,
+          "V2": 0.11,
+          "V3": 0.16,
+          "V4": 0.32,
+          "V5": 0.39,
+          "V6": 0.35
+        },
+        "s_amplituden_mv": {
+          "V1": 0.57,
+          "V2": 0.94,
+          "V3": 0.53,
+          "V4": 0.16,
+          "V5": 0.0,
+          "V6": 0.04
+        },
+        "rs_verhaeltnis": {
+          "V1": 0.18,
+          "V2": 0.11,
+          "V3": 0.3,
+          "V4": 1.93,
+          "V5": null,
+          "V6": 7.8
+        },
+        "qrs_muster": {
+          "V1": "rS",
+          "V2": "rS",
+          "V3": "rS",
+          "V4": "Rs",
+          "V5": "Rs",
+          "V6": "Rs"
+        },
+        "rs_umschlag": "V4",
+        "rs_umschlag_normal": true,
+        "r_progression_normal": false,
+        "s_persistenz_v6": false,
+        "s_amplitude_v6_mv": 0.04
+      },
+      "st_strecke": {
+        "beurteilbar": true,
+        "messpunkt": "J-Punkt + 60 ms",
+        "abweichung_mv": {
+          "I": -0.08,
+          "II": -0.07,
+          "III": 0.02,
+          "aVR": 0.08,
+          "aVL": -0.05,
+          "aVF": -0.03,
+          "V1": 0.09,
+          "V2": 0.09,
+          "V3": 0.04,
+          "V4": -0.01,
+          "V5": 0.02,
+          "V6": -0.05
+        },
+        "hebungen": [],
+        "senkungen": [],
+        "hebung_gruppen": [],
+        "senkung_gruppen": [],
+        "relevante_hebung": false,
+        "relevante_senkung": false
+      },
+      "t_wellen": {
+        "beurteilbar": true,
+        "t_amplituden_mv": {
+          "I": 0.03,
+          "II": -0.05,
+          "III": -0.13,
+          "aVR": 0.03,
+          "aVL": 0.08,
+          "aVF": -0.01,
+          "V1": -0.1,
+          "V2": -0.17,
+          "V3": 0.0,
+          "V4": 0.11,
+          "V5": 0.27,
+          "V6": 0.06
+        },
+        "negative_ableitungen": [
+          "III",
+          "V2"
+        ],
+        "pathologisch_negativ": [
+          "V2"
+        ],
+        "betroffene_gruppen": [],
+        "relevante_negativierung": true
+      },
+      "beurteilbar": true
+    },
+    "diagnose": {
+      "formulierungen": [
+        "Wahrscheinlich unspezifische ST-T-Streckenveränderungen",
+        "Wahrscheinlich ein Myokardinfarkt"
+      ],
+      "gemeldet": [
+        {
+          "klasse": "STTC",
+          "bezeichnung": "unspezifische ST-T-Veränderungen",
+          "p": 0.808,
+          "stufe": "wahrscheinlich",
+          "ebene": "zielklasse"
+        },
+        {
+          "klasse": "MI",
+          "bezeichnung": "Myokardinfarkt",
+          "p": 0.782,
+          "stufe": "wahrscheinlich",
+          "ebene": "superklasse (Konfidenz-Gating)"
+        }
+      ],
+      "konfidenz_gating": [
+        {
+          "von": "AMI",
+          "auf": "MI",
+          "p_subklasse": 0.537,
+          "p_superklasse": 0.782
+        }
+      ],
+      "verworfen": [
+        {
+          "klasse": "IMI",
+          "p": 0.528,
+          "grund": "schwächer als AMI in derselben Superklasse MI"
+        },
+        {
+          "klasse": "ISCA",
+          "p": 0.716,
+          "grund": "schwächer als STTC in derselben Superklasse STTC"
+        }
+      ]
+    },
+    "true_classes": [
+      "AMI",
+      "IMI",
+      "STTC"
+    ],
+    "qualitaetssicherung": {
+      "resnet_probabilities": {
+        "STTC": 0.808,
+        "ISCA": 0.716,
+        "AMI": 0.537,
+        "IMI": 0.528,
+        "NST_": 0.224
+      },
+      "confidence": "mittel",
+      "befund_schwelle": 0.5,
+      "gating_schwelle": 0.65
+    },
+    "qrs_kreuzpruefung": {
+      "messweg_ableitung_II_ms": 137.5,
+      "messweg_12_ableitungen_ms": null,
+      "verwertbar": false,
+      "grund": "zweiter Messweg (12-Ableitungs-Betrag) ohne Ergebnis — typisch bei Schenkelblock, wo die Repolarisation nahtlos in den Kammerkomplex übergeht"
+    },
+    "pipeline_stage": "stufe_1_output_v2",
+    "plausibility": {
+      "pro_parameter": {
+        "hr_bpm": {
+          "value": 79.2,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "normal",
+          "kommentar": "Herzfrequenz 79.2 bpm (normal)."
+        },
+        "pr_interval_ms": {
+          "value": 91.4,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "unter_norm",
+          "kommentar": "PQ-Intervall 91.4 ms (unter norm)."
+        },
+        "qrs_duration_ms": {
+          "value": 137.5,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "ueber_norm",
+          "kommentar": "QRS-Dauer 137.5 ms (ueber norm)."
+        },
+        "qt_interval_ms": {
+          "value": 273.0,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "unter_norm",
+          "kommentar": "QT-Intervall 273.0 ms (unter norm)."
+        },
+        "qtc_bazett_ms": {
+          "value": 312.4,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "normal",
+          "kommentar": "QTc (Bazett) 312.4 ms (normal)."
+        }
+      },
+      "warnungen": [
+        "PQ-Intervall 91.4 ms (unter norm).",
+        "QRS-Dauer 137.5 ms (ueber norm).",
+        "QT-Intervall 273.0 ms (unter norm)."
+      ],
+      "artefakte": [],
+      "n_artefakte": 0,
+      "alle_verwertbar": true
+    },
+    "classical_features_verwertbar": {
+      "hr_bpm": 79.2,
+      "pr_interval_ms": 91.4,
+      "qrs_duration_ms": null,
+      "qt_interval_ms": 273.0,
+      "qtc_bazett_ms": 312.4
+    }
+  },
+  {
+    "ecg_id": 3925,
+    "schema_version": 2,
+    "patient": {
+      "age_years": 24,
+      "sex": "männlich"
+    },
+    "acquisition": {
+      "sampling_rate_hz": 500,
+      "duration_s": 10.0,
+      "n_leads": 12
+    },
+    "classical_features": {
+      "hr_bpm": 96.6,
+      "pr_interval_ms": 150.3,
+      "qrs_duration_ms": 110.0,
+      "qt_interval_ms": 358.3,
+      "qtc_bazett_ms": 454.3
+    },
+    "morphologie": {
+      "methodik": {
+        "amplituden": "Median-Schlag über alle Herzaktionen (Beat-Averaging)",
+        "nulllinie": "PQ-Segment (30-5 ms vor QRS-Beginn)",
+        "st_messpunkt": "J-Punkt + 60 ms"
+      },
+      "rhythmus": {
+        "beurteilbar": true,
+        "hr_mean_bpm": 97.0,
+        "rr_median_ms": 618.0,
+        "rr_variationskoeffizient": 0.024,
+        "regelmaessig": true,
+        "extrasystolen_anzahl": 0,
+        "extrasystolen_mit_kompensatorischer_pause": 0,
+        "extrasystolen_typ": null
+      },
+      "fiducial_offsets_samples": {
+        "qrs_onset": -10,
+        "qrs_offset": 19,
+        "t_offset": 144,
+        "t_peak": 112,
+        "qrs_quelle": "global (12 Ableitungen)"
+      },
+      "intervalle_aus_fiducials": {
+        "qrs_dauer_ms": 66.0,
+        "hinweis": "gegen CLBBB/CRBBB kalibriert; unterschätzt schmale Komplexe systematisch um ca. 20 ms — für den Befundtext ist der Wert aus build_fact_set massgeblich"
+      },
+      "lagetyp": {
+        "beurteilbar": true,
+        "achse_grad": 98.0,
+        "lagetyp": "Rechtstyp"
+      },
+      "q_zacken": {
+        "beurteilbar": true,
+        "pathologische_q_ableitungen": [
+          "V1"
+        ],
+        "betroffene_gruppen": [],
+        "pardee_q_vorhanden": false,
+        "details": {
+          "aVL": {
+            "q_amplitude_mv": -0.67,
+            "q_dauer_ms": 56.0,
+            "r_amplitude_mv": 0.0,
+            "muster": "QS",
+            "lagetypbedingt": true,
+            "pathologisch": false
+          },
+          "V1": {
+            "q_amplitude_mv": -1.03,
+            "q_dauer_ms": 60.0,
+            "r_amplitude_mv": 0.0,
+            "muster": "QS",
+            "lagetypbedingt": false,
+            "pathologisch": true
+          }
+        }
+      },
+      "r_progression": {
+        "beurteilbar": true,
+        "r_amplituden_mv": {
+          "V1": 0.0,
+          "V2": 0.48,
+          "V3": 0.85,
+          "V4": 3.07,
+          "V5": 2.8,
+          "V6": 2.11
+        },
+        "s_amplituden_mv": {
+          "V1": 0.0,
+          "V2": 3.32,
+          "V3": 2.47,
+          "V4": 1.43,
+          "V5": 0.7,
+          "V6": 0.32
+        },
+        "rs_verhaeltnis": {
+          "V1": null,
+          "V2": 0.15,
+          "V3": 0.35,
+          "V4": 2.15,
+          "V5": 4.01,
+          "V6": 6.61
+        },
+        "qrs_muster": {
+          "V1": "QS",
+          "V2": "rS",
+          "V3": "rS",
+          "V4": "Rs",
+          "V5": "Rs",
+          "V6": "Rs"
+        },
+        "rs_umschlag": "V4",
+        "rs_umschlag_normal": true,
+        "r_progression_normal": true,
+        "s_persistenz_v6": true,
+        "s_amplitude_v6_mv": 0.32
+      },
+      "st_strecke": {
+        "beurteilbar": true,
+        "messpunkt": "J-Punkt + 60 ms",
+        "abweichung_mv": {
+          "I": 0.03,
+          "II": 0.09,
+          "III": 0.07,
+          "aVR": -0.04,
+          "aVL": -0.0,
+          "aVF": 0.09,
+          "V1": -0.04,
+          "V2": 0.04,
+          "V3": 0.17,
+          "V4": 0.08,
+          "V5": 0.03,
+          "V6": 0.05
+        },
+        "hebungen": [],
+        "senkungen": [],
+        "hebung_gruppen": [],
+        "senkung_gruppen": [],
+        "relevante_hebung": false,
+        "relevante_senkung": false
+      },
+      "t_wellen": {
+        "beurteilbar": true,
+        "t_amplituden_mv": {
+          "I": 0.25,
+          "II": 0.37,
+          "III": 0.2,
+          "aVR": -0.25,
+          "aVL": 0.06,
+          "aVF": 0.29,
+          "V1": -0.19,
+          "V2": 0.39,
+          "V3": 0.85,
+          "V4": 0.66,
+          "V5": 0.48,
+          "V6": 0.38
+        },
+        "negative_ableitungen": [
+          "aVR",
+          "V1"
+        ],
+        "pathologisch_negativ": [],
+        "betroffene_gruppen": [],
+        "relevante_negativierung": false
+      },
+      "beurteilbar": true
+    },
+    "diagnose": {
+      "formulierungen": [
+        "Nachweis eines Normalbefundes"
+      ],
+      "gemeldet": [
+        {
+          "klasse": "NORM",
+          "bezeichnung": "Normalbefund",
+          "p": 0.857,
+          "stufe": "sicher",
+          "ebene": "zielklasse"
+        }
+      ],
+      "konfidenz_gating": [],
+      "verworfen": [
+        {
+          "klasse": "LVH",
+          "p": 0.641,
+          "grund": "schwächer als NORM (0.857)"
+        }
+      ],
+      "vorbehalt": "Nebenbefundlich lag linksventrikuläre Hypertrophie knapp über der Befundschwelle, jedoch deutlich unterhalb des Normalbefundes."
+    },
+    "true_classes": [
+      "LAFB/LPFB",
+      "LVH"
+    ],
+    "qualitaetssicherung": {
+      "resnet_probabilities": {
+        "NORM": 0.857,
+        "LVH": 0.641,
+        "IVCD": 0.195,
+        "LAO/LAE": 0.194,
+        "IRBBB": 0.14,
+        "NST_": 0.129
+      },
+      "confidence": "hoch",
+      "befund_schwelle": 0.5,
+      "gating_schwelle": 0.65
+    },
+    "qrs_kreuzpruefung": {
+      "messweg_ableitung_II_ms": 110.0,
+      "messweg_12_ableitungen_ms": 66.0,
+      "verwertbar": true,
+      "grund": null
+    },
+    "pipeline_stage": "stufe_1_output_v2",
+    "plausibility": {
+      "pro_parameter": {
+        "hr_bpm": {
+          "value": 96.6,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "normal",
+          "kommentar": "Herzfrequenz 96.6 bpm (normal)."
+        },
+        "pr_interval_ms": {
+          "value": 150.3,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "normal",
+          "kommentar": "PQ-Intervall 150.3 ms (normal)."
+        },
+        "qrs_duration_ms": {
+          "value": 110.0,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "normal",
+          "kommentar": "QRS-Dauer 110.0 ms (normal)."
+        },
+        "qt_interval_ms": {
+          "value": 358.3,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "normal",
+          "kommentar": "QT-Intervall 358.3 ms (normal)."
+        },
+        "qtc_bazett_ms": {
+          "value": 454.3,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "ueber_norm",
+          "kommentar": "QTc (Bazett) 454.3 ms (ueber norm)."
+        }
+      },
+      "warnungen": [
+        "QTc (Bazett) 454.3 ms (ueber norm)."
+      ],
+      "artefakte": [],
+      "n_artefakte": 0,
+      "alle_verwertbar": true
+    },
+    "classical_features_verwertbar": {
+      "hr_bpm": 96.6,
+      "pr_interval_ms": 150.3,
+      "qrs_duration_ms": 110.0,
+      "qt_interval_ms": 358.3,
+      "qtc_bazett_ms": 454.3
+    }
+  },
+  {
+    "ecg_id": 4177,
+    "schema_version": 2,
+    "patient": {
+      "age_years": 70,
+      "sex": "weiblich"
+    },
+    "acquisition": {
+      "sampling_rate_hz": 500,
+      "duration_s": 10.0,
+      "n_leads": 12
+    },
+    "classical_features": {
+      "hr_bpm": 67.1,
+      "pr_interval_ms": 79.4,
+      "qrs_duration_ms": 107.0,
+      "qt_interval_ms": 404.6,
+      "qtc_bazett_ms": 428.0
+    },
+    "morphologie": {
+      "methodik": {
+        "amplituden": "Median-Schlag über alle Herzaktionen (Beat-Averaging)",
+        "nulllinie": "PQ-Segment (30-5 ms vor QRS-Beginn)",
+        "st_messpunkt": "J-Punkt + 60 ms"
+      },
+      "rhythmus": {
+        "beurteilbar": true,
+        "hr_mean_bpm": 67.0,
+        "rr_median_ms": 893.0,
+        "rr_variationskoeffizient": 0.017,
+        "regelmaessig": true,
+        "extrasystolen_anzahl": 0,
+        "extrasystolen_mit_kompensatorischer_pause": 0,
+        "extrasystolen_typ": null
+      },
+      "fiducial_offsets_samples": {
+        "qrs_onset": -12,
+        "qrs_offset": 14,
+        "t_offset": 177,
+        "t_peak": 145,
+        "qrs_quelle": "global (12 Ableitungen)"
+      },
+      "intervalle_aus_fiducials": {
+        "qrs_dauer_ms": 60.0,
+        "hinweis": "gegen CLBBB/CRBBB kalibriert; unterschätzt schmale Komplexe systematisch um ca. 20 ms — für den Befundtext ist der Wert aus build_fact_set massgeblich"
+      },
+      "lagetyp": {
+        "beurteilbar": true,
+        "achse_grad": 70.0,
+        "lagetyp": "Steiltyp"
+      },
+      "q_zacken": {
+        "beurteilbar": true,
+        "pathologische_q_ableitungen": [
+          "V1",
+          "V2"
+        ],
+        "betroffene_gruppen": [
+          "anteroseptal"
+        ],
+        "pardee_q_vorhanden": true,
+        "details": {
+          "aVL": {
+            "q_amplitude_mv": -0.2,
+            "q_dauer_ms": 42.0,
+            "r_amplitude_mv": 0.0,
+            "muster": "QS",
+            "lagetypbedingt": true,
+            "pathologisch": false
+          },
+          "V1": {
+            "q_amplitude_mv": -0.6,
+            "q_dauer_ms": 50.0,
+            "r_amplitude_mv": 0.0,
+            "muster": "QS",
+            "lagetypbedingt": false,
+            "pathologisch": true
+          },
+          "V2": {
+            "q_amplitude_mv": -1.33,
+            "q_dauer_ms": 50.0,
+            "r_amplitude_mv": 0.0,
+            "muster": "QS",
+            "lagetypbedingt": false,
+            "pathologisch": true
+          }
+        }
+      },
+      "r_progression": {
+        "beurteilbar": true,
+        "r_amplituden_mv": {
+          "V1": 0.0,
+          "V2": 0.0,
+          "V3": 0.41,
+          "V4": 1.06,
+          "V5": 0.87,
+          "V6": 0.67
+        },
+        "s_amplituden_mv": {
+          "V1": 0.0,
+          "V2": 0.0,
+          "V3": 0.74,
+          "V4": 0.07,
+          "V5": 0.0,
+          "V6": 0.0
+        },
+        "rs_verhaeltnis": {
+          "V1": null,
+          "V2": null,
+          "V3": 0.56,
+          "V4": 14.74,
+          "V5": null,
+          "V6": null
+        },
+        "qrs_muster": {
+          "V1": "QS",
+          "V2": "QS",
+          "V3": "rS",
+          "V4": "Rs",
+          "V5": "Rs",
+          "V6": "Rs"
+        },
+        "rs_umschlag": "V4",
+        "rs_umschlag_normal": true,
+        "r_progression_normal": true,
+        "s_persistenz_v6": false,
+        "s_amplitude_v6_mv": 0.0
+      },
+      "st_strecke": {
+        "beurteilbar": true,
+        "messpunkt": "J-Punkt + 60 ms",
+        "abweichung_mv": {
+          "I": -0.02,
+          "II": 0.01,
+          "III": 0.05,
+          "aVR": -0.0,
+          "aVL": -0.04,
+          "aVF": 0.03,
+          "V1": 0.07,
+          "V2": 0.11,
+          "V3": 0.05,
+          "V4": 0.02,
+          "V5": -0.03,
+          "V6": -0.01
+        },
+        "hebungen": [],
+        "senkungen": [],
+        "hebung_gruppen": [],
+        "senkung_gruppen": [],
+        "relevante_hebung": false,
+        "relevante_senkung": false
+      },
+      "t_wellen": {
+        "beurteilbar": true,
+        "t_amplituden_mv": {
+          "I": 0.18,
+          "II": 0.3,
+          "III": 0.08,
+          "aVR": -0.22,
+          "aVL": 0.05,
+          "aVF": 0.16,
+          "V1": -0.06,
+          "V2": 0.21,
+          "V3": 0.53,
+          "V4": 0.36,
+          "V5": 0.27,
+          "V6": 0.22
+        },
+        "negative_ableitungen": [
+          "aVR"
+        ],
+        "pathologisch_negativ": [],
+        "betroffene_gruppen": [],
+        "relevante_negativierung": false
+      },
+      "beurteilbar": true
+    },
+    "diagnose": {
+      "formulierungen": [
+        "Wahrscheinlich ein Myokardinfarkt"
+      ],
+      "gemeldet": [
+        {
+          "klasse": "MI",
+          "bezeichnung": "Myokardinfarkt",
+          "p": 0.779,
+          "stufe": "wahrscheinlich",
+          "ebene": "superklasse (Konfidenz-Gating)"
+        }
+      ],
+      "konfidenz_gating": [
+        {
+          "von": "AMI",
+          "auf": "MI",
+          "p_subklasse": 0.589,
+          "p_superklasse": 0.779
+        }
+      ],
+      "verworfen": [
+        {
+          "klasse": "NORM",
+          "p": 0.513,
+          "grund": "schwächer als AMI (0.589) — Pathologie schliesst Normalbefund aus"
+        }
+      ]
+    },
+    "true_classes": [
+      "AMI"
+    ],
+    "qualitaetssicherung": {
+      "resnet_probabilities": {
+        "AMI": 0.589,
+        "NORM": 0.513,
+        "MI_other": 0.45,
+        "STTC": 0.365,
+        "IVCD": 0.337,
+        "NST_": 0.245,
+        "LAFB/LPFB": 0.13
+      },
+      "confidence": "niedrig",
+      "befund_schwelle": 0.5,
+      "gating_schwelle": 0.65
+    },
+    "qrs_kreuzpruefung": {
+      "messweg_ableitung_II_ms": 107.0,
+      "messweg_12_ableitungen_ms": 60.0,
+      "verwertbar": true,
+      "grund": null
+    },
+    "pipeline_stage": "stufe_1_output_v2",
+    "plausibility": {
+      "pro_parameter": {
+        "hr_bpm": {
+          "value": 67.1,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "normal",
+          "kommentar": "Herzfrequenz 67.1 bpm (normal)."
+        },
+        "pr_interval_ms": {
+          "value": 79.4,
+          "plausibel": false,
+          "verwertbar": false,
+          "status": "artefakt",
+          "ref_status": null,
+          "kommentar": "PQ-Intervall 79.4 ms ist unrealistisch niedrig (plausibel 80–350 ms) — mutmaßliches Messartefakt, nicht als Befund verwertbar."
+        },
+        "qrs_duration_ms": {
+          "value": 107.0,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "normal",
+          "kommentar": "QRS-Dauer 107.0 ms (normal)."
+        },
+        "qt_interval_ms": {
+          "value": 404.6,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "normal",
+          "kommentar": "QT-Intervall 404.6 ms (normal)."
+        },
+        "qtc_bazett_ms": {
+          "value": 428.0,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "normal",
+          "kommentar": "QTc (Bazett) 428.0 ms (normal)."
+        }
+      },
+      "warnungen": [],
+      "artefakte": [
+        "PQ-Intervall 79.4 ms ist unrealistisch niedrig (plausibel 80–350 ms) — mutmaßliches Messartefakt, nicht als Befund verwertbar."
+      ],
+      "n_artefakte": 1,
+      "alle_verwertbar": false
+    },
+    "classical_features_verwertbar": {
+      "hr_bpm": 67.1,
+      "pr_interval_ms": null,
+      "qrs_duration_ms": 107.0,
+      "qt_interval_ms": 404.6,
+      "qtc_bazett_ms": 428.0
+    }
+  },
+  {
+    "ecg_id": 4335,
+    "schema_version": 2,
+    "patient": {
+      "age_years": 68,
+      "sex": "männlich"
+    },
+    "acquisition": {
+      "sampling_rate_hz": 500,
+      "duration_s": 10.0,
+      "n_leads": 12
+    },
+    "classical_features": {
+      "hr_bpm": 67.5,
+      "pr_interval_ms": 76.0,
+      "qrs_duration_ms": 167.7,
+      "qt_interval_ms": 340.3,
+      "qtc_bazett_ms": 361.0
+    },
+    "morphologie": {
+      "methodik": {
+        "amplituden": "Median-Schlag über alle Herzaktionen (Beat-Averaging)",
+        "nulllinie": "PQ-Segment (30-5 ms vor QRS-Beginn)",
+        "st_messpunkt": "J-Punkt + 60 ms"
+      },
+      "rhythmus": {
+        "beurteilbar": true,
+        "hr_mean_bpm": 69.0,
+        "rr_median_ms": 869.0,
+        "rr_variationskoeffizient": 0.158,
+        "regelmaessig": false,
+        "extrasystolen_anzahl": 1,
+        "extrasystolen_mit_kompensatorischer_pause": 0,
+        "extrasystolen_typ": "ventrikulär (breiter Kammerkomplex)"
+      },
+      "fiducial_offsets_samples": {
+        "qrs_onset": -60,
+        "qrs_offset": 17,
+        "t_offset": 79,
+        "t_peak": 69,
+        "qrs_quelle": "Ableitung II (dwt)"
+      },
+      "intervalle_aus_fiducials": {
+        "qrs_dauer_ms": 66.0,
+        "hinweis": "gegen CLBBB/CRBBB kalibriert; unterschätzt schmale Komplexe systematisch um ca. 20 ms — für den Befundtext ist der Wert aus build_fact_set massgeblich"
+      },
+      "lagetyp": {
+        "beurteilbar": true,
+        "achse_grad": 11.0,
+        "lagetyp": "Linkstyp"
+      },
+      "q_zacken": {
+        "beurteilbar": true,
+        "pathologische_q_ableitungen": [],
+        "betroffene_gruppen": [],
+        "pardee_q_vorhanden": false,
+        "details": {
+          "I": {
+            "q_amplitude_mv": -0.12,
+            "q_dauer_ms": 16.0,
+            "r_amplitude_mv": 0.94,
+            "muster": "qR",
+            "lagetypbedingt": false,
+            "pathologisch": false
+          },
+          "aVL": {
+            "q_amplitude_mv": -0.2,
+            "q_dauer_ms": 26.0,
+            "r_amplitude_mv": 0.8,
+            "muster": "qR",
+            "lagetypbedingt": false,
+            "pathologisch": false
+          },
+          "V4": {
+            "q_amplitude_mv": -0.36,
+            "q_dauer_ms": 10.0,
+            "r_amplitude_mv": 4.37,
+            "muster": "qRs",
+            "lagetypbedingt": false,
+            "pathologisch": false
+          },
+          "V5": {
+            "q_amplitude_mv": -0.45,
+            "q_dauer_ms": 18.0,
+            "r_amplitude_mv": 4.15,
+            "muster": "qR",
+            "lagetypbedingt": false,
+            "pathologisch": false
+          },
+          "V6": {
+            "q_amplitude_mv": -0.27,
+            "q_dauer_ms": 18.0,
+            "r_amplitude_mv": 2.23,
+            "muster": "qR",
+            "lagetypbedingt": false,
+            "pathologisch": false
+          }
+        }
+      },
+      "r_progression": {
+        "beurteilbar": true,
+        "r_amplituden_mv": {
+          "V1": 0.3,
+          "V2": 0.47,
+          "V3": 0.51,
+          "V4": 4.37,
+          "V5": 4.15,
+          "V6": 2.23
+        },
+        "s_amplituden_mv": {
+          "V1": 1.76,
+          "V2": 0.86,
+          "V3": 1.18,
+          "V4": 0.66,
+          "V5": 0.0,
+          "V6": 0.0
+        },
+        "rs_verhaeltnis": {
+          "V1": 0.17,
+          "V2": 0.55,
+          "V3": 0.43,
+          "V4": 6.6,
+          "V5": null,
+          "V6": null
+        },
+        "qrs_muster": {
+          "V1": "rS",
+          "V2": "rS",
+          "V3": "rS",
+          "V4": "qRs",
+          "V5": "qR",
+          "V6": "qR"
+        },
+        "rs_umschlag": "V4",
+        "rs_umschlag_normal": true,
+        "r_progression_normal": true,
+        "s_persistenz_v6": false,
+        "s_amplitude_v6_mv": 0.0
+      },
+      "st_strecke": {
+        "beurteilbar": true,
+        "messpunkt": "J-Punkt + 60 ms",
+        "abweichung_mv": {
+          "I": -0.04,
+          "II": -0.02,
+          "III": -0.0,
+          "aVR": 0.02,
+          "aVL": -0.04,
+          "aVF": -0.04,
+          "V1": 0.05,
+          "V2": 0.06,
+          "V3": 0.06,
+          "V4": -0.07,
+          "V5": -0.15,
+          "V6": -0.11
+        },
+        "hebungen": [],
+        "senkungen": [
+          "V5",
+          "V6"
+        ],
+        "hebung_gruppen": [],
+        "senkung_gruppen": [
+          "lateral"
+        ],
+        "relevante_hebung": false,
+        "relevante_senkung": true
+      },
+      "t_wellen": {
+        "beurteilbar": true,
+        "t_amplituden_mv": {
+          "I": -0.07,
+          "II": -0.0,
+          "III": 0.04,
+          "aVR": 0.02,
+          "aVL": -0.07,
+          "aVF": -0.01,
+          "V1": 0.09,
+          "V2": 0.08,
+          "V3": 0.1,
+          "V4": -0.08,
+          "V5": -0.17,
+          "V6": -0.12
+        },
+        "negative_ableitungen": [
+          "V5",
+          "V6"
+        ],
+        "pathologisch_negativ": [
+          "V5",
+          "V6"
+        ],
+        "betroffene_gruppen": [
+          "lateral"
+        ],
+        "relevante_negativierung": true
+      },
+      "beurteilbar": true
+    },
+    "diagnose": {
+      "formulierungen": [
+        "Nachweis einer linksventrikulären Hypertrophie",
+        "Nachweis einer Ischämie"
+      ],
+      "gemeldet": [
+        {
+          "klasse": "LVH",
+          "bezeichnung": "linksventrikuläre Hypertrophie",
+          "p": 0.998,
+          "stufe": "sicher",
+          "ebene": "zielklasse"
+        },
+        {
+          "klasse": "ISC_",
+          "bezeichnung": "Ischämie, unspezifisch",
+          "p": 0.983,
+          "stufe": "sicher",
+          "ebene": "zielklasse"
+        }
+      ],
+      "konfidenz_gating": [],
+      "verworfen": []
+    },
+    "true_classes": [
+      "ISC_",
+      "LVH"
+    ],
+    "qualitaetssicherung": {
+      "resnet_probabilities": {
+        "LVH": 0.998,
+        "ISC_": 0.983,
+        "STTC": 0.316,
+        "NST_": 0.205
+      },
+      "confidence": "hoch",
+      "befund_schwelle": 0.5,
+      "gating_schwelle": 0.65
+    },
+    "qrs_kreuzpruefung": {
+      "messweg_ableitung_II_ms": 167.7,
+      "messweg_12_ableitungen_ms": 66.0,
+      "verwertbar": false,
+      "grund": "Messwege widersprechen sich: 168 ms gegen 66 ms (einmal schmal, einmal verbreitert)"
+    },
+    "pipeline_stage": "stufe_1_output_v2",
+    "plausibility": {
+      "pro_parameter": {
+        "hr_bpm": {
+          "value": 67.5,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "normal",
+          "kommentar": "Herzfrequenz 67.5 bpm (normal)."
+        },
+        "pr_interval_ms": {
+          "value": 76.0,
+          "plausibel": false,
+          "verwertbar": false,
+          "status": "artefakt",
+          "ref_status": null,
+          "kommentar": "PQ-Intervall 76.0 ms ist unrealistisch niedrig (plausibel 80–350 ms) — mutmaßliches Messartefakt, nicht als Befund verwertbar."
+        },
+        "qrs_duration_ms": {
+          "value": 167.7,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "ueber_norm",
+          "kommentar": "QRS-Dauer 167.7 ms (ueber norm)."
+        },
+        "qt_interval_ms": {
+          "value": 340.3,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "unter_norm",
+          "kommentar": "QT-Intervall 340.3 ms (unter norm)."
+        },
+        "qtc_bazett_ms": {
+          "value": 361.0,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "normal",
+          "kommentar": "QTc (Bazett) 361.0 ms (normal)."
+        }
+      },
+      "warnungen": [
+        "QRS-Dauer 167.7 ms (ueber norm).",
+        "QT-Intervall 340.3 ms (unter norm)."
+      ],
+      "artefakte": [
+        "PQ-Intervall 76.0 ms ist unrealistisch niedrig (plausibel 80–350 ms) — mutmaßliches Messartefakt, nicht als Befund verwertbar."
+      ],
+      "n_artefakte": 1,
+      "alle_verwertbar": false
+    },
+    "classical_features_verwertbar": {
+      "hr_bpm": 67.5,
+      "pr_interval_ms": null,
+      "qrs_duration_ms": null,
+      "qt_interval_ms": 340.3,
+      "qtc_bazett_ms": 361.0
+    }
+  },
+  {
+    "ecg_id": 7561,
+    "schema_version": 2,
+    "patient": {
+      "age_years": 18,
+      "sex": "weiblich"
+    },
+    "acquisition": {
+      "sampling_rate_hz": 500,
+      "duration_s": 10.0,
+      "n_leads": 12
+    },
+    "classical_features": {
+      "hr_bpm": 94.7,
+      "pr_interval_ms": 76.6,
+      "qrs_duration_ms": 127.9,
+      "qt_interval_ms": 378.6,
+      "qtc_bazett_ms": 474.9
+    },
+    "morphologie": {
+      "methodik": {
+        "amplituden": "Median-Schlag über alle Herzaktionen (Beat-Averaging)",
+        "nulllinie": "PQ-Segment (30-5 ms vor QRS-Beginn)",
+        "st_messpunkt": "J-Punkt + 60 ms"
+      },
+      "rhythmus": {
+        "beurteilbar": true,
+        "hr_mean_bpm": 100.0,
+        "rr_median_ms": 598.0,
+        "rr_variationskoeffizient": 0.105,
+        "regelmaessig": true,
+        "extrasystolen_anzahl": 0,
+        "extrasystolen_mit_kompensatorischer_pause": 0,
+        "extrasystolen_typ": null
+      },
+      "fiducial_offsets_samples": {
+        "qrs_onset": -11,
+        "qrs_offset": 21,
+        "t_offset": 149,
+        "t_peak": 111,
+        "qrs_quelle": "global (12 Ableitungen)"
+      },
+      "intervalle_aus_fiducials": {
+        "qrs_dauer_ms": 72.0,
+        "hinweis": "gegen CLBBB/CRBBB kalibriert; unterschätzt schmale Komplexe systematisch um ca. 20 ms — für den Befundtext ist der Wert aus build_fact_set massgeblich"
+      },
+      "lagetyp": {
+        "beurteilbar": true,
+        "achse_grad": 39.0,
+        "lagetyp": "Indifferenztyp"
+      },
+      "q_zacken": {
+        "beurteilbar": true,
+        "pathologische_q_ableitungen": [],
+        "betroffene_gruppen": [],
+        "pardee_q_vorhanden": false,
+        "details": {
+          "aVL": {
+            "q_amplitude_mv": -0.08,
+            "q_dauer_ms": 8.0,
+            "r_amplitude_mv": 0.37,
+            "muster": "qR",
+            "lagetypbedingt": false,
+            "pathologisch": false
+          },
+          "V6": {
+            "q_amplitude_mv": -0.07,
+            "q_dauer_ms": 4.0,
+            "r_amplitude_mv": 1.8,
+            "muster": "qRs",
+            "lagetypbedingt": false,
+            "pathologisch": false
+          }
+        }
+      },
+      "r_progression": {
+        "beurteilbar": true,
+        "r_amplituden_mv": {
+          "V1": 0.38,
+          "V2": 1.21,
+          "V3": 1.5,
+          "V4": 2.13,
+          "V5": 2.19,
+          "V6": 1.8
+        },
+        "s_amplituden_mv": {
+          "V1": 0.71,
+          "V2": 1.61,
+          "V3": 1.27,
+          "V4": 0.59,
+          "V5": 0.31,
+          "V6": 0.13
+        },
+        "rs_verhaeltnis": {
+          "V1": 0.53,
+          "V2": 0.75,
+          "V3": 1.18,
+          "V4": 3.59,
+          "V5": 7.0,
+          "V6": 13.37
+        },
+        "qrs_muster": {
+          "V1": "rS",
+          "V2": "rS",
+          "V3": "Rs",
+          "V4": "Rs",
+          "V5": "Rs",
+          "V6": "Rs"
+        },
+        "rs_umschlag": "V3",
+        "rs_umschlag_normal": true,
+        "r_progression_normal": true,
+        "s_persistenz_v6": true,
+        "s_amplitude_v6_mv": 0.13
+      },
+      "st_strecke": {
+        "beurteilbar": true,
+        "messpunkt": "J-Punkt + 60 ms",
+        "abweichung_mv": {
+          "I": 0.03,
+          "II": 0.0,
+          "III": -0.03,
+          "aVR": -0.01,
+          "aVL": -0.0,
+          "aVF": -0.02,
+          "V1": -0.01,
+          "V2": 0.03,
+          "V3": 0.03,
+          "V4": 0.01,
+          "V5": 0.03,
+          "V6": 0.01
+        },
+        "hebungen": [],
+        "senkungen": [],
+        "hebung_gruppen": [],
+        "senkung_gruppen": [],
+        "relevante_hebung": false,
+        "relevante_senkung": false
+      },
+      "t_wellen": {
+        "beurteilbar": true,
+        "t_amplituden_mv": {
+          "I": 0.34,
+          "II": 0.32,
+          "III": -0.03,
+          "aVR": -0.33,
+          "aVL": 0.17,
+          "aVF": 0.13,
+          "V1": -0.13,
+          "V2": 0.53,
+          "V3": 0.48,
+          "V4": 0.51,
+          "V5": 0.46,
+          "V6": 0.34
+        },
+        "negative_ableitungen": [
+          "aVR",
+          "V1"
+        ],
+        "pathologisch_negativ": [],
+        "betroffene_gruppen": [],
+        "relevante_negativierung": false
+      },
+      "beurteilbar": true
+    },
+    "diagnose": {
+      "formulierungen": [
+        "Nachweis eines Normalbefundes"
+      ],
+      "gemeldet": [
+        {
+          "klasse": "NORM",
+          "bezeichnung": "Normalbefund",
+          "p": 0.956,
+          "stufe": "sicher",
+          "ebene": "zielklasse"
+        }
+      ],
+      "konfidenz_gating": [],
+      "verworfen": []
+    },
+    "true_classes": [
+      "NORM"
+    ],
+    "qualitaetssicherung": {
+      "resnet_probabilities": {
+        "NORM": 0.956,
+        "LVH": 0.391
+      },
+      "confidence": "hoch",
+      "befund_schwelle": 0.5,
+      "gating_schwelle": 0.65
+    },
+    "qrs_kreuzpruefung": {
+      "messweg_ableitung_II_ms": 127.9,
+      "messweg_12_ableitungen_ms": 72.0,
+      "verwertbar": false,
+      "grund": "Messwege widersprechen sich: 128 ms gegen 72 ms (einmal schmal, einmal verbreitert)"
+    },
+    "pipeline_stage": "stufe_1_output_v2",
+    "plausibility": {
+      "pro_parameter": {
+        "hr_bpm": {
+          "value": 94.7,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "normal",
+          "kommentar": "Herzfrequenz 94.7 bpm (normal)."
+        },
+        "pr_interval_ms": {
+          "value": 76.6,
+          "plausibel": false,
+          "verwertbar": false,
+          "status": "artefakt",
+          "ref_status": null,
+          "kommentar": "PQ-Intervall 76.6 ms ist unrealistisch niedrig (plausibel 80–350 ms) — mutmaßliches Messartefakt, nicht als Befund verwertbar."
+        },
+        "qrs_duration_ms": {
+          "value": 127.9,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "ueber_norm",
+          "kommentar": "QRS-Dauer 127.9 ms (ueber norm)."
+        },
+        "qt_interval_ms": {
+          "value": 378.6,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "normal",
+          "kommentar": "QT-Intervall 378.6 ms (normal)."
+        },
+        "qtc_bazett_ms": {
+          "value": 474.9,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "ueber_norm",
+          "kommentar": "QTc (Bazett) 474.9 ms (ueber norm)."
+        }
+      },
+      "warnungen": [
+        "QRS-Dauer 127.9 ms (ueber norm).",
+        "QTc (Bazett) 474.9 ms (ueber norm)."
+      ],
+      "artefakte": [
+        "PQ-Intervall 76.6 ms ist unrealistisch niedrig (plausibel 80–350 ms) — mutmaßliches Messartefakt, nicht als Befund verwertbar."
+      ],
+      "n_artefakte": 1,
+      "alle_verwertbar": false
+    },
+    "classical_features_verwertbar": {
+      "hr_bpm": 94.7,
+      "pr_interval_ms": null,
+      "qrs_duration_ms": null,
+      "qt_interval_ms": 378.6,
+      "qtc_bazett_ms": 474.9
+    }
+  },
+  {
+    "ecg_id": 7919,
+    "schema_version": 2,
+    "patient": {
+      "age_years": 80,
+      "sex": "weiblich"
+    },
+    "acquisition": {
+      "sampling_rate_hz": 500,
+      "duration_s": 10.0,
+      "n_leads": 12
+    },
+    "classical_features": {
+      "hr_bpm": 70.8,
+      "pr_interval_ms": 118.7,
+      "qrs_duration_ms": 154.5,
+      "qt_interval_ms": 333.3,
+      "qtc_bazett_ms": 362.0
+    },
+    "morphologie": {
+      "methodik": {
+        "amplituden": "Median-Schlag über alle Herzaktionen (Beat-Averaging)",
+        "nulllinie": "PQ-Segment (30-5 ms vor QRS-Beginn)",
+        "st_messpunkt": "J-Punkt + 60 ms"
+      },
+      "rhythmus": {
+        "beurteilbar": true,
+        "hr_mean_bpm": 70.0,
+        "rr_median_ms": 854.0,
+        "rr_variationskoeffizient": 0.017,
+        "regelmaessig": true,
+        "extrasystolen_anzahl": 0,
+        "extrasystolen_mit_kompensatorischer_pause": 0,
+        "extrasystolen_typ": null
+      },
+      "fiducial_offsets_samples": {
+        "qrs_onset": -16,
+        "qrs_offset": 32,
+        "t_offset": 164,
+        "t_peak": 151,
+        "qrs_quelle": "global (12 Ableitungen)"
+      },
+      "intervalle_aus_fiducials": {
+        "qrs_dauer_ms": null,
+        "hinweis": "gegen CLBBB/CRBBB kalibriert; unterschätzt schmale Komplexe systematisch um ca. 20 ms — für den Befundtext ist der Wert aus build_fact_set massgeblich"
+      },
+      "lagetyp": {
+        "beurteilbar": true,
+        "achse_grad": -11.0,
+        "lagetyp": "Linkstyp"
+      },
+      "q_zacken": {
+        "beurteilbar": true,
+        "pathologische_q_ableitungen": [
+          "V1",
+          "V2",
+          "V3"
+        ],
+        "betroffene_gruppen": [
+          "anteroseptal"
+        ],
+        "pardee_q_vorhanden": true,
+        "details": {
+          "III": {
+            "q_amplitude_mv": -0.96,
+            "q_dauer_ms": 66.0,
+            "r_amplitude_mv": 0.0,
+            "muster": "QS",
+            "lagetypbedingt": true,
+            "pathologisch": false
+          },
+          "V1": {
+            "q_amplitude_mv": -2.34,
+            "q_dauer_ms": 94.0,
+            "r_amplitude_mv": 0.0,
+            "muster": "QS",
+            "lagetypbedingt": false,
+            "pathologisch": true
+          },
+          "V2": {
+            "q_amplitude_mv": -2.51,
+            "q_dauer_ms": 96.0,
+            "r_amplitude_mv": 0.0,
+            "muster": "QS",
+            "lagetypbedingt": false,
+            "pathologisch": true
+          },
+          "V3": {
+            "q_amplitude_mv": -3.67,
+            "q_dauer_ms": 96.0,
+            "r_amplitude_mv": 0.0,
+            "muster": "QS",
+            "lagetypbedingt": false,
+            "pathologisch": true
+          }
+        }
+      },
+      "r_progression": {
+        "beurteilbar": true,
+        "r_amplituden_mv": {
+          "V1": 0.0,
+          "V2": 0.0,
+          "V3": 0.0,
+          "V4": 0.31,
+          "V5": 1.24,
+          "V6": 1.25
+        },
+        "s_amplituden_mv": {
+          "V1": 0.0,
+          "V2": 0.0,
+          "V3": 0.0,
+          "V4": 0.81,
+          "V5": 0.04,
+          "V6": 0.0
+        },
+        "rs_verhaeltnis": {
+          "V1": null,
+          "V2": null,
+          "V3": null,
+          "V4": 0.38,
+          "V5": 32.19,
+          "V6": null
+        },
+        "qrs_muster": {
+          "V1": "QS",
+          "V2": "QS",
+          "V3": "QS",
+          "V4": "rS",
+          "V5": "Rs",
+          "V6": "Rs"
+        },
+        "rs_umschlag": "V5",
+        "rs_umschlag_normal": false,
+        "r_progression_normal": false,
+        "s_persistenz_v6": false,
+        "s_amplitude_v6_mv": 0.0
+      },
+      "st_strecke": {
+        "beurteilbar": true,
+        "messpunkt": "J-Punkt + 60 ms",
+        "abweichung_mv": {
+          "I": -0.17,
+          "II": -0.04,
+          "III": 0.09,
+          "aVR": 0.1,
+          "aVL": -0.13,
+          "aVF": 0.02,
+          "V1": 0.31,
+          "V2": 0.34,
+          "V3": 0.56,
+          "V4": 0.13,
+          "V5": -0.13,
+          "V6": -0.16
+        },
+        "hebungen": [
+          "V1",
+          "V2",
+          "V3",
+          "V4"
+        ],
+        "senkungen": [
+          "I",
+          "aVL",
+          "V5",
+          "V6"
+        ],
+        "hebung_gruppen": [
+          "anteroseptal"
+        ],
+        "senkung_gruppen": [
+          "lateral"
+        ],
+        "relevante_hebung": true,
+        "relevante_senkung": true
+      },
+      "t_wellen": {
+        "beurteilbar": true,
+        "t_amplituden_mv": {
+          "I": -0.11,
+          "II": 0.13,
+          "III": 0.23,
+          "aVR": -0.02,
+          "aVL": -0.18,
+          "aVF": 0.17,
+          "V1": 0.32,
+          "V2": 0.49,
+          "V3": 0.93,
+          "V4": 0.3,
+          "V5": -0.08,
+          "V6": -0.17
+        },
+        "negative_ableitungen": [
+          "I",
+          "aVL",
+          "V6"
+        ],
+        "pathologisch_negativ": [
+          "I",
+          "aVL",
+          "V6"
+        ],
+        "betroffene_gruppen": [
+          "lateral"
+        ],
+        "relevante_negativierung": true
+      },
+      "beurteilbar": true
+    },
+    "diagnose": {
+      "formulierungen": [
+        "Nachweis eines kompletten Linksschenkelblocks",
+        "Wahrscheinlich eine linksventrikuläre Hypertrophie"
+      ],
+      "gemeldet": [
+        {
+          "klasse": "CLBBB",
+          "bezeichnung": "kompletter Linksschenkelblock",
+          "p": 0.989,
+          "stufe": "sicher",
+          "ebene": "zielklasse"
+        },
+        {
+          "klasse": "LVH",
+          "bezeichnung": "linksventrikuläre Hypertrophie",
+          "p": 0.757,
+          "stufe": "wahrscheinlich",
+          "ebene": "zielklasse"
+        }
+      ],
+      "konfidenz_gating": [],
+      "verworfen": [
+        {
+          "klasse": "LAO/LAE",
+          "p": 0.642,
+          "grund": "schwächer als LVH in derselben Superklasse HYP"
+        }
+      ]
+    },
+    "true_classes": [
+      "CLBBB",
+      "ISC_",
+      "LVH"
+    ],
+    "qualitaetssicherung": {
+      "resnet_probabilities": {
+        "CLBBB": 0.989,
+        "LVH": 0.757,
+        "LAO/LAE": 0.642,
+        "ISC_": 0.362,
+        "IVCD": 0.257,
+        "AMI": 0.192,
+        "STTC": 0.169,
+        "LAFB/LPFB": 0.108
+      },
+      "confidence": "hoch",
+      "befund_schwelle": 0.5,
+      "gating_schwelle": 0.65
+    },
+    "qrs_kreuzpruefung": {
+      "messweg_ableitung_II_ms": 154.5,
+      "messweg_12_ableitungen_ms": null,
+      "verwertbar": false,
+      "grund": "zweiter Messweg (12-Ableitungs-Betrag) ohne Ergebnis — typisch bei Schenkelblock, wo die Repolarisation nahtlos in den Kammerkomplex übergeht"
+    },
+    "pipeline_stage": "stufe_1_output_v2",
+    "plausibility": {
+      "pro_parameter": {
+        "hr_bpm": {
+          "value": 70.8,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "normal",
+          "kommentar": "Herzfrequenz 70.8 bpm (normal)."
+        },
+        "pr_interval_ms": {
+          "value": 118.7,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "unter_norm",
+          "kommentar": "PQ-Intervall 118.7 ms (unter norm)."
+        },
+        "qrs_duration_ms": {
+          "value": 154.5,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "ueber_norm",
+          "kommentar": "QRS-Dauer 154.5 ms (ueber norm)."
+        },
+        "qt_interval_ms": {
+          "value": 333.3,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "unter_norm",
+          "kommentar": "QT-Intervall 333.3 ms (unter norm)."
+        },
+        "qtc_bazett_ms": {
+          "value": 362.0,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "normal",
+          "kommentar": "QTc (Bazett) 362.0 ms (normal)."
+        }
+      },
+      "warnungen": [
+        "PQ-Intervall 118.7 ms (unter norm).",
+        "QRS-Dauer 154.5 ms (ueber norm).",
+        "QT-Intervall 333.3 ms (unter norm)."
+      ],
+      "artefakte": [],
+      "n_artefakte": 0,
+      "alle_verwertbar": true
+    },
+    "classical_features_verwertbar": {
+      "hr_bpm": 70.8,
+      "pr_interval_ms": 118.7,
+      "qrs_duration_ms": null,
+      "qt_interval_ms": 333.3,
+      "qtc_bazett_ms": 362.0
+    }
+  },
+  {
+    "ecg_id": 8083,
+    "schema_version": 2,
+    "patient": {
+      "age_years": 54,
+      "sex": "weiblich"
+    },
+    "acquisition": {
+      "sampling_rate_hz": 500,
+      "duration_s": 10.0,
+      "n_leads": 12
+    },
+    "classical_features": {
+      "hr_bpm": 58.1,
+      "pr_interval_ms": 127.5,
+      "qrs_duration_ms": 171.0,
+      "qt_interval_ms": 413.0,
+      "qtc_bazett_ms": 406.2
+    },
+    "morphologie": {
+      "methodik": {
+        "amplituden": "Median-Schlag über alle Herzaktionen (Beat-Averaging)",
+        "nulllinie": "PQ-Segment (30-5 ms vor QRS-Beginn)",
+        "st_messpunkt": "J-Punkt + 60 ms"
+      },
+      "rhythmus": {
+        "beurteilbar": true,
+        "hr_mean_bpm": 58.0,
+        "rr_median_ms": 1036.0,
+        "rr_variationskoeffizient": 0.037,
+        "regelmaessig": true,
+        "extrasystolen_anzahl": 0,
+        "extrasystolen_mit_kompensatorischer_pause": 0,
+        "extrasystolen_typ": null
+      },
+      "fiducial_offsets_samples": {
+        "qrs_onset": -26,
+        "qrs_offset": 43,
+        "t_offset": 168,
+        "t_peak": 136,
+        "qrs_quelle": "Ableitung II (dwt)"
+      },
+      "intervalle_aus_fiducials": {
+        "qrs_dauer_ms": 62.0,
+        "hinweis": "gegen CLBBB/CRBBB kalibriert; unterschätzt schmale Komplexe systematisch um ca. 20 ms — für den Befundtext ist der Wert aus build_fact_set massgeblich"
+      },
+      "lagetyp": {
+        "beurteilbar": true,
+        "achse_grad": 73.0,
+        "lagetyp": "Steiltyp"
+      },
+      "q_zacken": {
+        "beurteilbar": true,
+        "pathologische_q_ableitungen": [],
+        "betroffene_gruppen": [],
+        "pardee_q_vorhanden": false,
+        "details": {
+          "III": {
+            "q_amplitude_mv": -0.18,
+            "q_dauer_ms": 12.0,
+            "r_amplitude_mv": 1.49,
+            "muster": "qR",
+            "lagetypbedingt": false,
+            "pathologisch": false
+          },
+          "aVF": {
+            "q_amplitude_mv": -0.1,
+            "q_dauer_ms": 8.0,
+            "r_amplitude_mv": 1.62,
+            "muster": "qR",
+            "lagetypbedingt": false,
+            "pathologisch": false
+          }
+        }
+      },
+      "r_progression": {
+        "beurteilbar": true,
+        "r_amplituden_mv": {
+          "V1": 0.14,
+          "V2": 0.66,
+          "V3": 0.77,
+          "V4": 1.91,
+          "V5": 2.01,
+          "V6": 1.74
+        },
+        "s_amplituden_mv": {
+          "V1": 1.05,
+          "V2": 1.46,
+          "V3": 0.25,
+          "V4": 0.0,
+          "V5": 0.0,
+          "V6": 0.0
+        },
+        "rs_verhaeltnis": {
+          "V1": 0.14,
+          "V2": 0.45,
+          "V3": 3.07,
+          "V4": null,
+          "V5": null,
+          "V6": null
+        },
+        "qrs_muster": {
+          "V1": "rS",
+          "V2": "rS",
+          "V3": "Rs",
+          "V4": "Rs",
+          "V5": "Rs",
+          "V6": "Rs"
+        },
+        "rs_umschlag": "V3",
+        "rs_umschlag_normal": true,
+        "r_progression_normal": true,
+        "s_persistenz_v6": false,
+        "s_amplitude_v6_mv": 0.0
+      },
+      "st_strecke": {
+        "beurteilbar": true,
+        "messpunkt": "J-Punkt + 60 ms",
+        "abweichung_mv": {
+          "I": 0.04,
+          "II": 0.05,
+          "III": 0.02,
+          "aVR": -0.05,
+          "aVL": -0.0,
+          "aVF": 0.04,
+          "V1": 0.08,
+          "V2": 0.26,
+          "V3": 0.17,
+          "V4": 0.08,
+          "V5": 0.05,
+          "V6": 0.04
+        },
+        "hebungen": [
+          "V2",
+          "V3"
+        ],
+        "senkungen": [],
+        "hebung_gruppen": [
+          "anteroseptal"
+        ],
+        "senkung_gruppen": [],
+        "relevante_hebung": true,
+        "relevante_senkung": false
+      },
+      "t_wellen": {
+        "beurteilbar": true,
+        "t_amplituden_mv": {
+          "I": 0.25,
+          "II": 0.53,
+          "III": 0.27,
+          "aVR": -0.39,
+          "aVL": -0.02,
+          "aVF": 0.39,
+          "V1": 0.03,
+          "V2": 0.63,
+          "V3": 0.63,
+          "V4": 0.59,
+          "V5": 0.54,
+          "V6": 0.49
+        },
+        "negative_ableitungen": [
+          "aVR"
+        ],
+        "pathologisch_negativ": [],
+        "betroffene_gruppen": [],
+        "relevante_negativierung": false
+      },
+      "beurteilbar": true
+    },
+    "diagnose": {
+      "formulierungen": [
+        "Nachweis eines Normalbefundes"
+      ],
+      "gemeldet": [
+        {
+          "klasse": "NORM",
+          "bezeichnung": "Normalbefund",
+          "p": 0.981,
+          "stufe": "sicher",
+          "ebene": "zielklasse"
+        }
+      ],
+      "konfidenz_gating": [],
+      "verworfen": []
+    },
+    "true_classes": [
+      "LVH"
+    ],
+    "qualitaetssicherung": {
+      "resnet_probabilities": {
+        "NORM": 0.981,
+        "IVCD": 0.224
+      },
+      "confidence": "hoch",
+      "befund_schwelle": 0.5,
+      "gating_schwelle": 0.65
+    },
+    "qrs_kreuzpruefung": {
+      "messweg_ableitung_II_ms": 171.0,
+      "messweg_12_ableitungen_ms": 62.0,
+      "verwertbar": false,
+      "grund": "Messwege widersprechen sich: 171 ms gegen 62 ms (einmal schmal, einmal verbreitert)"
+    },
+    "pipeline_stage": "stufe_1_output_v2",
+    "plausibility": {
+      "pro_parameter": {
+        "hr_bpm": {
+          "value": 58.1,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "unter_norm",
+          "kommentar": "Herzfrequenz 58.1 bpm (unter norm)."
+        },
+        "pr_interval_ms": {
+          "value": 127.5,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "normal",
+          "kommentar": "PQ-Intervall 127.5 ms (normal)."
+        },
+        "qrs_duration_ms": {
+          "value": 171.0,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "ueber_norm",
+          "kommentar": "QRS-Dauer 171.0 ms (ueber norm)."
+        },
+        "qt_interval_ms": {
+          "value": 413.0,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "normal",
+          "kommentar": "QT-Intervall 413.0 ms (normal)."
+        },
+        "qtc_bazett_ms": {
+          "value": 406.2,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "normal",
+          "kommentar": "QTc (Bazett) 406.2 ms (normal)."
+        }
+      },
+      "warnungen": [
+        "Herzfrequenz 58.1 bpm (unter norm).",
+        "QRS-Dauer 171.0 ms (ueber norm)."
+      ],
+      "artefakte": [],
+      "n_artefakte": 0,
+      "alle_verwertbar": true
+    },
+    "classical_features_verwertbar": {
+      "hr_bpm": 58.1,
+      "pr_interval_ms": 127.5,
+      "qrs_duration_ms": null,
+      "qt_interval_ms": 413.0,
+      "qtc_bazett_ms": 406.2
+    }
+  },
+  {
+    "ecg_id": 8178,
+    "schema_version": 2,
+    "patient": {
+      "age_years": 77,
+      "sex": "weiblich"
+    },
+    "acquisition": {
+      "sampling_rate_hz": 500,
+      "duration_s": 10.0,
+      "n_leads": 12
+    },
+    "classical_features": {
+      "hr_bpm": 70.2,
+      "pr_interval_ms": 147.8,
+      "qrs_duration_ms": 95.2,
+      "qt_interval_ms": 240.4,
+      "qtc_bazett_ms": 260.0
+    },
+    "morphologie": {
+      "methodik": {
+        "amplituden": "Median-Schlag über alle Herzaktionen (Beat-Averaging)",
+        "nulllinie": "PQ-Segment (30-5 ms vor QRS-Beginn)",
+        "st_messpunkt": "J-Punkt + 60 ms"
+      },
+      "rhythmus": {
+        "beurteilbar": true,
+        "hr_mean_bpm": 70.0,
+        "rr_median_ms": 855.0,
+        "rr_variationskoeffizient": 0.007,
+        "regelmaessig": true,
+        "extrasystolen_anzahl": 0,
+        "extrasystolen_mit_kompensatorischer_pause": 0,
+        "extrasystolen_typ": null
+      },
+      "fiducial_offsets_samples": {
+        "qrs_onset": -11,
+        "qrs_offset": 17,
+        "t_offset": 64,
+        "t_peak": 58,
+        "qrs_quelle": "global (12 Ableitungen)"
+      },
+      "intervalle_aus_fiducials": {
+        "qrs_dauer_ms": 64.0,
+        "hinweis": "gegen CLBBB/CRBBB kalibriert; unterschätzt schmale Komplexe systematisch um ca. 20 ms — für den Befundtext ist der Wert aus build_fact_set massgeblich"
+      },
+      "lagetyp": {
+        "beurteilbar": true,
+        "achse_grad": 10.0,
+        "lagetyp": "Linkstyp"
+      },
+      "q_zacken": {
+        "beurteilbar": true,
+        "pathologische_q_ableitungen": [
+          "III",
+          "V1"
+        ],
+        "betroffene_gruppen": [],
+        "pardee_q_vorhanden": false,
+        "details": {
+          "III": {
+            "q_amplitude_mv": -0.26,
+            "q_dauer_ms": 44.0,
+            "r_amplitude_mv": 0.0,
+            "muster": "QS",
+            "lagetypbedingt": false,
+            "pathologisch": true
+          },
+          "V1": {
+            "q_amplitude_mv": -0.65,
+            "q_dauer_ms": 30.0,
+            "r_amplitude_mv": 0.0,
+            "muster": "QS",
+            "lagetypbedingt": false,
+            "pathologisch": true
+          }
+        }
+      },
+      "r_progression": {
+        "beurteilbar": true,
+        "r_amplituden_mv": {
+          "V1": 0.0,
+          "V2": 0.35,
+          "V3": 0.66,
+          "V4": 0.71,
+          "V5": 1.06,
+          "V6": 1.27
+        },
+        "s_amplituden_mv": {
+          "V1": 0.0,
+          "V2": 0.51,
+          "V3": 0.58,
+          "V4": 0.48,
+          "V5": 0.41,
+          "V6": 0.28
+        },
+        "rs_verhaeltnis": {
+          "V1": null,
+          "V2": 0.7,
+          "V3": 1.14,
+          "V4": 1.5,
+          "V5": 2.6,
+          "V6": 4.62
+        },
+        "qrs_muster": {
+          "V1": "QS",
+          "V2": "rS",
+          "V3": "Rs",
+          "V4": "Rs",
+          "V5": "Rs",
+          "V6": "Rs"
+        },
+        "rs_umschlag": "V3",
+        "rs_umschlag_normal": true,
+        "r_progression_normal": true,
+        "s_persistenz_v6": true,
+        "s_amplitude_v6_mv": 0.28
+      },
+      "st_strecke": {
+        "beurteilbar": true,
+        "messpunkt": "J-Punkt + 60 ms",
+        "abweichung_mv": {
+          "I": -0.02,
+          "II": -0.03,
+          "III": -0.01,
+          "aVR": 0.03,
+          "aVL": -0.01,
+          "aVF": -0.02,
+          "V1": 0.02,
+          "V2": 0.03,
+          "V3": 0.01,
+          "V4": -0.05,
+          "V5": -0.02,
+          "V6": -0.05
+        },
+        "hebungen": [],
+        "senkungen": [],
+        "hebung_gruppen": [],
+        "senkung_gruppen": [],
+        "relevante_hebung": false,
+        "relevante_senkung": false
+      },
+      "t_wellen": {
+        "beurteilbar": true,
+        "t_amplituden_mv": {
+          "I": -0.03,
+          "II": -0.03,
+          "III": -0.01,
+          "aVR": 0.03,
+          "aVL": -0.01,
+          "aVF": -0.02,
+          "V1": 0.02,
+          "V2": 0.03,
+          "V3": 0.01,
+          "V4": -0.04,
+          "V5": -0.07,
+          "V6": -0.05
+        },
+        "negative_ableitungen": [],
+        "pathologisch_negativ": [],
+        "betroffene_gruppen": [],
+        "relevante_negativierung": false
+      },
+      "beurteilbar": true
+    },
+    "diagnose": {
+      "formulierungen": [
+        "Nachweis einer Ischämie der Vorderwand",
+        "Nachweis eines inkompletten Rechtsschenkelblocks",
+        "Wahrscheinlich ein Hinterwandinfarkt"
+      ],
+      "gemeldet": [
+        {
+          "klasse": "ISCA",
+          "bezeichnung": "Ischämie, anteriore Ableitungen",
+          "p": 0.972,
+          "stufe": "sicher",
+          "ebene": "zielklasse"
+        },
+        {
+          "klasse": "IRBBB",
+          "bezeichnung": "inkompletter Rechtsschenkelblock",
+          "p": 0.922,
+          "stufe": "sicher",
+          "ebene": "zielklasse"
+        },
+        {
+          "klasse": "IMI",
+          "bezeichnung": "Hinterwand-/Inferiorinfarkt",
+          "p": 0.774,
+          "stufe": "wahrscheinlich",
+          "ebene": "zielklasse"
+        }
+      ],
+      "konfidenz_gating": [],
+      "verworfen": [
+        {
+          "klasse": "AMI",
+          "p": 0.599,
+          "grund": "schwächer als IMI in derselben Superklasse MI"
+        }
+      ]
+    },
+    "true_classes": [
+      "AMI",
+      "IMI",
+      "IRBBB"
+    ],
+    "qualitaetssicherung": {
+      "resnet_probabilities": {
+        "ISCA": 0.972,
+        "IRBBB": 0.922,
+        "IMI": 0.774,
+        "AMI": 0.599,
+        "ISC_": 0.487,
+        "STTC": 0.336,
+        "LVH": 0.195,
+        "ISCI": 0.114
+      },
+      "confidence": "hoch",
+      "befund_schwelle": 0.5,
+      "gating_schwelle": 0.65
+    },
+    "qrs_kreuzpruefung": {
+      "messweg_ableitung_II_ms": 95.2,
+      "messweg_12_ableitungen_ms": 64.0,
+      "verwertbar": true,
+      "grund": null
+    },
+    "pipeline_stage": "stufe_1_output_v2",
+    "plausibility": {
+      "pro_parameter": {
+        "hr_bpm": {
+          "value": 70.2,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "normal",
+          "kommentar": "Herzfrequenz 70.2 bpm (normal)."
+        },
+        "pr_interval_ms": {
+          "value": 147.8,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "normal",
+          "kommentar": "PQ-Intervall 147.8 ms (normal)."
+        },
+        "qrs_duration_ms": {
+          "value": 95.2,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "normal",
+          "kommentar": "QRS-Dauer 95.2 ms (normal)."
+        },
+        "qt_interval_ms": {
+          "value": 240.4,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "unter_norm",
+          "kommentar": "QT-Intervall 240.4 ms (unter norm)."
+        },
+        "qtc_bazett_ms": {
+          "value": 260.0,
+          "plausibel": false,
+          "verwertbar": false,
+          "status": "artefakt",
+          "ref_status": null,
+          "kommentar": "QTc (Bazett) 260.0 ms ist unrealistisch niedrig (plausibel 300–700 ms) — mutmaßliches Messartefakt, nicht als Befund verwertbar."
+        }
+      },
+      "warnungen": [
+        "QT-Intervall 240.4 ms (unter norm)."
+      ],
+      "artefakte": [
+        "QTc (Bazett) 260.0 ms ist unrealistisch niedrig (plausibel 300–700 ms) — mutmaßliches Messartefakt, nicht als Befund verwertbar."
+      ],
+      "n_artefakte": 1,
+      "alle_verwertbar": false
+    },
+    "classical_features_verwertbar": {
+      "hr_bpm": 70.2,
+      "pr_interval_ms": 147.8,
+      "qrs_duration_ms": 95.2,
+      "qt_interval_ms": 240.4,
+      "qtc_bazett_ms": null
+    }
+  },
+  {
+    "ecg_id": 9180,
+    "schema_version": 2,
+    "patient": {
+      "age_years": 66,
+      "sex": "weiblich"
+    },
+    "acquisition": {
+      "sampling_rate_hz": 500,
+      "duration_s": 10.0,
+      "n_leads": 12
+    },
+    "classical_features": {
+      "hr_bpm": 59.3,
+      "pr_interval_ms": 76.8,
+      "qrs_duration_ms": 132.2,
+      "qt_interval_ms": 313.8,
+      "qtc_bazett_ms": 312.0
+    },
+    "morphologie": {
+      "methodik": {
+        "amplituden": "Median-Schlag über alle Herzaktionen (Beat-Averaging)",
+        "nulllinie": "PQ-Segment (30-5 ms vor QRS-Beginn)",
+        "st_messpunkt": "J-Punkt + 60 ms"
+      },
+      "rhythmus": {
+        "beurteilbar": true,
+        "hr_mean_bpm": 60.0,
+        "rr_median_ms": 994.0,
+        "rr_variationskoeffizient": 0.066,
+        "regelmaessig": true,
+        "extrasystolen_anzahl": 0,
+        "extrasystolen_mit_kompensatorischer_pause": 0,
+        "extrasystolen_typ": null
+      },
+      "fiducial_offsets_samples": {
+        "qrs_onset": -9,
+        "qrs_offset": 16,
+        "t_offset": 108,
+        "t_peak": 99,
+        "qrs_quelle": "global (12 Ableitungen)"
+      },
+      "intervalle_aus_fiducials": {
+        "qrs_dauer_ms": 56.0,
+        "hinweis": "gegen CLBBB/CRBBB kalibriert; unterschätzt schmale Komplexe systematisch um ca. 20 ms — für den Befundtext ist der Wert aus build_fact_set massgeblich"
+      },
+      "lagetyp": {
+        "beurteilbar": true,
+        "achse_grad": 42.0,
+        "lagetyp": "Indifferenztyp"
+      },
+      "q_zacken": {
+        "beurteilbar": true,
+        "pathologische_q_ableitungen": [
+          "V1",
+          "V2"
+        ],
+        "betroffene_gruppen": [
+          "anteroseptal"
+        ],
+        "pardee_q_vorhanden": true,
+        "details": {
+          "V1": {
+            "q_amplitude_mv": -1.28,
+            "q_dauer_ms": 50.0,
+            "r_amplitude_mv": 0.0,
+            "muster": "QS",
+            "lagetypbedingt": false,
+            "pathologisch": true
+          },
+          "V2": {
+            "q_amplitude_mv": -1.51,
+            "q_dauer_ms": 50.0,
+            "r_amplitude_mv": 0.0,
+            "muster": "QS",
+            "lagetypbedingt": false,
+            "pathologisch": true
+          }
+        }
+      },
+      "r_progression": {
+        "beurteilbar": true,
+        "r_amplituden_mv": {
+          "V1": 0.0,
+          "V2": 0.0,
+          "V3": 0.42,
+          "V4": 2.76,
+          "V5": 2.08,
+          "V6": 1.42
+        },
+        "s_amplituden_mv": {
+          "V1": 0.0,
+          "V2": 0.0,
+          "V3": 1.37,
+          "V4": 0.68,
+          "V5": 0.15,
+          "V6": 0.03
+        },
+        "rs_verhaeltnis": {
+          "V1": null,
+          "V2": null,
+          "V3": 0.3,
+          "V4": 4.08,
+          "V5": 14.09,
+          "V6": 53.98
+        },
+        "qrs_muster": {
+          "V1": "QS",
+          "V2": "QS",
+          "V3": "rS",
+          "V4": "Rs",
+          "V5": "Rs",
+          "V6": "Rs"
+        },
+        "rs_umschlag": "V4",
+        "rs_umschlag_normal": true,
+        "r_progression_normal": true,
+        "s_persistenz_v6": false,
+        "s_amplitude_v6_mv": 0.03
+      },
+      "st_strecke": {
+        "beurteilbar": true,
+        "messpunkt": "J-Punkt + 60 ms",
+        "abweichung_mv": {
+          "I": -0.01,
+          "II": -0.03,
+          "III": -0.01,
+          "aVR": 0.02,
+          "aVL": 0.0,
+          "aVF": -0.02,
+          "V1": 0.03,
+          "V2": 0.04,
+          "V3": 0.03,
+          "V4": -0.02,
+          "V5": -0.04,
+          "V6": -0.03
+        },
+        "hebungen": [],
+        "senkungen": [],
+        "hebung_gruppen": [],
+        "senkung_gruppen": [],
+        "relevante_hebung": false,
+        "relevante_senkung": false
+      },
+      "t_wellen": {
+        "beurteilbar": true,
+        "t_amplituden_mv": {
+          "I": -0.0,
+          "II": -0.01,
+          "III": -0.0,
+          "aVR": 0.01,
+          "aVL": 0.01,
+          "aVF": -0.01,
+          "V1": 0.04,
+          "V2": 0.08,
+          "V3": 0.09,
+          "V4": -0.02,
+          "V5": -0.06,
+          "V6": -0.04
+        },
+        "negative_ableitungen": [],
+        "pathologisch_negativ": [],
+        "betroffene_gruppen": [],
+        "relevante_negativierung": false
+      },
+      "beurteilbar": true
+    },
+    "diagnose": {
+      "formulierungen": [
+        "Nachweis eines Vorderwandinfarktes",
+        "Wahrscheinlich eine linksventrikuläre Hypertrophie",
+        "Wahrscheinlich eine Ischämie der Vorderwand"
+      ],
+      "gemeldet": [
+        {
+          "klasse": "AMI",
+          "bezeichnung": "Vorderwandinfarkt",
+          "p": 0.907,
+          "stufe": "sicher",
+          "ebene": "zielklasse"
+        },
+        {
+          "klasse": "LVH",
+          "bezeichnung": "linksventrikuläre Hypertrophie",
+          "p": 0.81,
+          "stufe": "wahrscheinlich",
+          "ebene": "zielklasse"
+        },
+        {
+          "klasse": "ISCA",
+          "bezeichnung": "Ischämie, anteriore Ableitungen",
+          "p": 0.805,
+          "stufe": "wahrscheinlich",
+          "ebene": "zielklasse"
+        }
+      ],
+      "konfidenz_gating": [],
+      "verworfen": [
+        {
+          "klasse": "ISC_",
+          "p": 0.7,
+          "grund": "schwächer als ISCA in derselben Superklasse STTC"
+        },
+        {
+          "klasse": "STTC",
+          "p": 0.565,
+          "grund": "schwächer als ISCA in derselben Superklasse STTC"
+        }
+      ]
+    },
+    "true_classes": [
+      "AMI",
+      "ISC_",
+      "LVH"
+    ],
+    "qualitaetssicherung": {
+      "resnet_probabilities": {
+        "AMI": 0.907,
+        "LVH": 0.81,
+        "ISCA": 0.805,
+        "ISC_": 0.7,
+        "STTC": 0.565,
+        "NST_": 0.335,
+        "ISCI": 0.145,
+        "MI_other": 0.115
+      },
+      "confidence": "hoch",
+      "befund_schwelle": 0.5,
+      "gating_schwelle": 0.65
+    },
+    "qrs_kreuzpruefung": {
+      "messweg_ableitung_II_ms": 132.2,
+      "messweg_12_ableitungen_ms": 56.0,
+      "verwertbar": false,
+      "grund": "Messwege widersprechen sich: 132 ms gegen 56 ms (einmal schmal, einmal verbreitert)"
+    },
+    "pipeline_stage": "stufe_1_output_v2",
+    "plausibility": {
+      "pro_parameter": {
+        "hr_bpm": {
+          "value": 59.3,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "unter_norm",
+          "kommentar": "Herzfrequenz 59.3 bpm (unter norm)."
+        },
+        "pr_interval_ms": {
+          "value": 76.8,
+          "plausibel": false,
+          "verwertbar": false,
+          "status": "artefakt",
+          "ref_status": null,
+          "kommentar": "PQ-Intervall 76.8 ms ist unrealistisch niedrig (plausibel 80–350 ms) — mutmaßliches Messartefakt, nicht als Befund verwertbar."
+        },
+        "qrs_duration_ms": {
+          "value": 132.2,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "ueber_norm",
+          "kommentar": "QRS-Dauer 132.2 ms (ueber norm)."
+        },
+        "qt_interval_ms": {
+          "value": 313.8,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "unter_norm",
+          "kommentar": "QT-Intervall 313.8 ms (unter norm)."
+        },
+        "qtc_bazett_ms": {
+          "value": 312.0,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "normal",
+          "kommentar": "QTc (Bazett) 312.0 ms (normal)."
+        }
+      },
+      "warnungen": [
+        "Herzfrequenz 59.3 bpm (unter norm).",
+        "QRS-Dauer 132.2 ms (ueber norm).",
+        "QT-Intervall 313.8 ms (unter norm)."
+      ],
+      "artefakte": [
+        "PQ-Intervall 76.8 ms ist unrealistisch niedrig (plausibel 80–350 ms) — mutmaßliches Messartefakt, nicht als Befund verwertbar."
+      ],
+      "n_artefakte": 1,
+      "alle_verwertbar": false
+    },
+    "classical_features_verwertbar": {
+      "hr_bpm": 59.3,
+      "pr_interval_ms": null,
+      "qrs_duration_ms": null,
+      "qt_interval_ms": 313.8,
+      "qtc_bazett_ms": 312.0
+    }
+  },
+  {
+    "ecg_id": 9943,
+    "schema_version": 2,
+    "patient": {
+      "age_years": 70,
+      "sex": "männlich"
+    },
+    "acquisition": {
+      "sampling_rate_hz": 500,
+      "duration_s": 10.0,
+      "n_leads": 12
+    },
+    "classical_features": {
+      "hr_bpm": 59.4,
+      "pr_interval_ms": 142.8,
+      "qrs_duration_ms": 273.2,
+      "qt_interval_ms": 492.8,
+      "qtc_bazett_ms": 484.7
+    },
+    "morphologie": {
+      "methodik": {
+        "amplituden": "Median-Schlag über alle Herzaktionen (Beat-Averaging)",
+        "nulllinie": "PQ-Segment (30-5 ms vor QRS-Beginn)",
+        "st_messpunkt": "J-Punkt + 60 ms"
+      },
+      "rhythmus": {
+        "beurteilbar": true,
+        "hr_mean_bpm": 53.0,
+        "rr_median_ms": 1142.0,
+        "rr_variationskoeffizient": 0.235,
+        "regelmaessig": false,
+        "extrasystolen_anzahl": 2,
+        "extrasystolen_mit_kompensatorischer_pause": 0,
+        "extrasystolen_typ": "ventrikulär (breiter Kammerkomplex)"
+      },
+      "fiducial_offsets_samples": {
+        "qrs_onset": -12,
+        "qrs_offset": 15,
+        "t_offset": 185,
+        "t_peak": 154,
+        "qrs_quelle": "global (12 Ableitungen)"
+      },
+      "intervalle_aus_fiducials": {
+        "qrs_dauer_ms": 64.0,
+        "hinweis": "gegen CLBBB/CRBBB kalibriert; unterschätzt schmale Komplexe systematisch um ca. 20 ms — für den Befundtext ist der Wert aus build_fact_set massgeblich"
+      },
+      "lagetyp": {
+        "beurteilbar": true,
+        "achse_grad": 72.0,
+        "lagetyp": "Steiltyp"
+      },
+      "q_zacken": {
+        "beurteilbar": true,
+        "pathologische_q_ableitungen": [
+          "V1",
+          "V2"
+        ],
+        "betroffene_gruppen": [
+          "anteroseptal"
+        ],
+        "pardee_q_vorhanden": true,
+        "details": {
+          "III": {
+            "q_amplitude_mv": -0.13,
+            "q_dauer_ms": 14.0,
+            "r_amplitude_mv": 0.63,
+            "muster": "qR",
+            "lagetypbedingt": false,
+            "pathologisch": false
+          },
+          "aVF": {
+            "q_amplitude_mv": -0.08,
+            "q_dauer_ms": 6.0,
+            "r_amplitude_mv": 0.6,
+            "muster": "qR",
+            "lagetypbedingt": false,
+            "pathologisch": false
+          },
+          "V1": {
+            "q_amplitude_mv": -0.63,
+            "q_dauer_ms": 52.0,
+            "r_amplitude_mv": 0.0,
+            "muster": "QS",
+            "lagetypbedingt": false,
+            "pathologisch": true
+          },
+          "V2": {
+            "q_amplitude_mv": -1.0,
+            "q_dauer_ms": 46.0,
+            "r_amplitude_mv": 0.0,
+            "muster": "QS",
+            "lagetypbedingt": false,
+            "pathologisch": true
+          }
+        }
+      },
+      "r_progression": {
+        "beurteilbar": true,
+        "r_amplituden_mv": {
+          "V1": 0.0,
+          "V2": 0.0,
+          "V3": 0.23,
+          "V4": 0.89,
+          "V5": 1.82,
+          "V6": 1.24
+        },
+        "s_amplituden_mv": {
+          "V1": 0.0,
+          "V2": 0.0,
+          "V3": 1.44,
+          "V4": 1.0,
+          "V5": 0.39,
+          "V6": 0.0
+        },
+        "rs_verhaeltnis": {
+          "V1": null,
+          "V2": null,
+          "V3": 0.16,
+          "V4": 0.89,
+          "V5": 4.67,
+          "V6": null
+        },
+        "qrs_muster": {
+          "V1": "QS",
+          "V2": "QS",
+          "V3": "rS",
+          "V4": "rS",
+          "V5": "Rs",
+          "V6": "Rs"
+        },
+        "rs_umschlag": "V5",
+        "rs_umschlag_normal": false,
+        "r_progression_normal": false,
+        "s_persistenz_v6": false,
+        "s_amplitude_v6_mv": 0.0
+      },
+      "st_strecke": {
+        "beurteilbar": true,
+        "messpunkt": "J-Punkt + 60 ms",
+        "abweichung_mv": {
+          "I": -0.02,
+          "II": 0.0,
+          "III": 0.01,
+          "aVR": 0.02,
+          "aVL": -0.02,
+          "aVF": 0.01,
+          "V1": 0.06,
+          "V2": 0.02,
+          "V3": 0.04,
+          "V4": 0.01,
+          "V5": -0.03,
+          "V6": -0.01
+        },
+        "hebungen": [],
+        "senkungen": [],
+        "hebung_gruppen": [],
+        "senkung_gruppen": [],
+        "relevante_hebung": false,
+        "relevante_senkung": false
+      },
+      "t_wellen": {
+        "beurteilbar": true,
+        "t_amplituden_mv": {
+          "I": -0.01,
+          "II": 0.1,
+          "III": 0.08,
+          "aVR": -0.04,
+          "aVL": -0.05,
+          "aVF": 0.09,
+          "V1": 0.06,
+          "V2": 0.14,
+          "V3": 0.28,
+          "V4": 0.16,
+          "V5": 0.03,
+          "V6": 0.04
+        },
+        "negative_ableitungen": [],
+        "pathologisch_negativ": [],
+        "betroffene_gruppen": [],
+        "relevante_negativierung": false
+      },
+      "beurteilbar": true
+    },
+    "diagnose": {
+      "formulierungen": [
+        "Nachweis unspezifischer ST-T-Streckenveränderungen",
+        "Wahrscheinlich ein Myokardinfarkt"
+      ],
+      "gemeldet": [
+        {
+          "klasse": "STTC",
+          "bezeichnung": "unspezifische ST-T-Veränderungen",
+          "p": 0.889,
+          "stufe": "sicher",
+          "ebene": "zielklasse"
+        },
+        {
+          "klasse": "MI",
+          "bezeichnung": "Myokardinfarkt",
+          "p": 0.829,
+          "stufe": "wahrscheinlich",
+          "ebene": "superklasse (Konfidenz-Gating)"
+        }
+      ],
+      "konfidenz_gating": [
+        {
+          "von": "AMI",
+          "auf": "MI",
+          "p_subklasse": 0.587,
+          "p_superklasse": 0.829
+        }
+      ],
+      "verworfen": [
+        {
+          "klasse": "IMI",
+          "p": 0.584,
+          "grund": "schwächer als AMI in derselben Superklasse MI"
+        },
+        {
+          "klasse": "NST_",
+          "p": 0.69,
+          "grund": "schwächer als ISCA in derselben Superklasse STTC"
+        },
+        {
+          "klasse": "ISCA",
+          "p": 0.759,
+          "grund": "schwächer als STTC in derselben Superklasse STTC"
+        }
+      ]
+    },
+    "true_classes": [
+      "STTC"
+    ],
+    "qualitaetssicherung": {
+      "resnet_probabilities": {
+        "STTC": 0.889,
+        "ISCA": 0.759,
+        "NST_": 0.69,
+        "AMI": 0.587,
+        "IMI": 0.584,
+        "ISC_": 0.157
+      },
+      "confidence": "hoch",
+      "befund_schwelle": 0.5,
+      "gating_schwelle": 0.65
+    },
+    "qrs_kreuzpruefung": {
+      "messweg_ableitung_II_ms": 273.2,
+      "messweg_12_ableitungen_ms": 64.0,
+      "verwertbar": false,
+      "grund": "Messwege widersprechen sich: 273 ms gegen 64 ms (einmal schmal, einmal verbreitert)"
+    },
+    "pipeline_stage": "stufe_1_output_v2",
+    "plausibility": {
+      "pro_parameter": {
+        "hr_bpm": {
+          "value": 59.4,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "unter_norm",
+          "kommentar": "Herzfrequenz 59.4 bpm (unter norm)."
+        },
+        "pr_interval_ms": {
+          "value": 142.8,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "normal",
+          "kommentar": "PQ-Intervall 142.8 ms (normal)."
+        },
+        "qrs_duration_ms": {
+          "value": 273.2,
+          "plausibel": false,
+          "verwertbar": false,
+          "status": "artefakt",
+          "ref_status": null,
+          "kommentar": "QRS-Dauer 273.2 ms ist unrealistisch hoch (plausibel 40–200 ms) — mutmaßliches Messartefakt, nicht als Befund verwertbar."
+        },
+        "qt_interval_ms": {
+          "value": 492.8,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "ueber_norm",
+          "kommentar": "QT-Intervall 492.8 ms (ueber norm)."
+        },
+        "qtc_bazett_ms": {
+          "value": 484.7,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "ueber_norm",
+          "kommentar": "QTc (Bazett) 484.7 ms (ueber norm)."
+        }
+      },
+      "warnungen": [
+        "Herzfrequenz 59.4 bpm (unter norm).",
+        "QT-Intervall 492.8 ms (ueber norm).",
+        "QTc (Bazett) 484.7 ms (ueber norm)."
+      ],
+      "artefakte": [
+        "QRS-Dauer 273.2 ms ist unrealistisch hoch (plausibel 40–200 ms) — mutmaßliches Messartefakt, nicht als Befund verwertbar."
+      ],
+      "n_artefakte": 1,
+      "alle_verwertbar": false
+    },
+    "classical_features_verwertbar": {
+      "hr_bpm": 59.4,
+      "pr_interval_ms": 142.8,
+      "qrs_duration_ms": null,
+      "qt_interval_ms": 492.8,
+      "qtc_bazett_ms": 484.7
+    }
+  },
+  {
+    "ecg_id": 11406,
+    "schema_version": 2,
+    "patient": {
+      "age_years": 74,
+      "sex": "weiblich"
+    },
+    "acquisition": {
+      "sampling_rate_hz": 500,
+      "duration_s": 10.0,
+      "n_leads": 12
+    },
+    "classical_features": {
+      "hr_bpm": 76.5,
+      "pr_interval_ms": 55.1,
+      "qrs_duration_ms": 186.3,
+      "qt_interval_ms": 451.8,
+      "qtc_bazett_ms": 510.1
+    },
+    "morphologie": {
+      "methodik": {
+        "amplituden": "Median-Schlag über alle Herzaktionen (Beat-Averaging)",
+        "nulllinie": "PQ-Segment (30-5 ms vor QRS-Beginn)",
+        "st_messpunkt": "J-Punkt + 60 ms"
+      },
+      "rhythmus": {
+        "beurteilbar": true,
+        "hr_mean_bpm": 77.0,
+        "rr_median_ms": 779.0,
+        "rr_variationskoeffizient": 0.021,
+        "regelmaessig": true,
+        "extrasystolen_anzahl": 0,
+        "extrasystolen_mit_kompensatorischer_pause": 0,
+        "extrasystolen_typ": null
+      },
+      "fiducial_offsets_samples": {
+        "qrs_onset": -74,
+        "qrs_offset": 25,
+        "t_offset": 157,
+        "t_peak": 130,
+        "qrs_quelle": "Ableitung II (dwt)"
+      },
+      "intervalle_aus_fiducials": {
+        "qrs_dauer_ms": 56.0,
+        "hinweis": "gegen CLBBB/CRBBB kalibriert; unterschätzt schmale Komplexe systematisch um ca. 20 ms — für den Befundtext ist der Wert aus build_fact_set massgeblich"
+      },
+      "lagetyp": {
+        "beurteilbar": true,
+        "achse_grad": -7.0,
+        "lagetyp": "Linkstyp"
+      },
+      "q_zacken": {
+        "beurteilbar": true,
+        "pathologische_q_ableitungen": [
+          "V1"
+        ],
+        "betroffene_gruppen": [],
+        "pardee_q_vorhanden": false,
+        "details": {
+          "III": {
+            "q_amplitude_mv": -0.58,
+            "q_dauer_ms": 32.0,
+            "r_amplitude_mv": 0.0,
+            "muster": "QS",
+            "lagetypbedingt": true,
+            "pathologisch": false
+          },
+          "V1": {
+            "q_amplitude_mv": -1.15,
+            "q_dauer_ms": 48.0,
+            "r_amplitude_mv": 0.0,
+            "muster": "QS",
+            "lagetypbedingt": false,
+            "pathologisch": true
+          }
+        }
+      },
+      "r_progression": {
+        "beurteilbar": true,
+        "r_amplituden_mv": {
+          "V1": 0.0,
+          "V2": 0.29,
+          "V3": 0.66,
+          "V4": 2.23,
+          "V5": 1.76,
+          "V6": 1.39
+        },
+        "s_amplituden_mv": {
+          "V1": 0.0,
+          "V2": 0.81,
+          "V3": 0.72,
+          "V4": 0.4,
+          "V5": 0.14,
+          "V6": 0.09
+        },
+        "rs_verhaeltnis": {
+          "V1": null,
+          "V2": 0.35,
+          "V3": 0.91,
+          "V4": 5.57,
+          "V5": 12.55,
+          "V6": 14.78
+        },
+        "qrs_muster": {
+          "V1": "QS",
+          "V2": "qRs",
+          "V3": "qRs",
+          "V4": "qRs",
+          "V5": "qRs",
+          "V6": "Rs"
+        },
+        "rs_umschlag": "V4",
+        "rs_umschlag_normal": true,
+        "r_progression_normal": true,
+        "s_persistenz_v6": false,
+        "s_amplitude_v6_mv": 0.09
+      },
+      "st_strecke": {
+        "beurteilbar": true,
+        "messpunkt": "J-Punkt + 60 ms",
+        "abweichung_mv": {
+          "I": -0.13,
+          "II": -0.07,
+          "III": 0.05,
+          "aVR": 0.1,
+          "aVL": -0.09,
+          "aVF": -0.01,
+          "V1": 0.05,
+          "V2": 0.04,
+          "V3": -0.01,
+          "V4": -0.13,
+          "V5": -0.12,
+          "V6": -0.08
+        },
+        "hebungen": [
+          "aVR"
+        ],
+        "senkungen": [
+          "I",
+          "V4",
+          "V5"
+        ],
+        "hebung_gruppen": [],
+        "senkung_gruppen": [
+          "lateral"
+        ],
+        "relevante_hebung": false,
+        "relevante_senkung": true
+      },
+      "t_wellen": {
+        "beurteilbar": true,
+        "t_amplituden_mv": {
+          "I": 0.2,
+          "II": 0.15,
+          "III": -0.06,
+          "aVR": -0.17,
+          "aVL": 0.13,
+          "aVF": 0.04,
+          "V1": -0.05,
+          "V2": 0.35,
+          "V3": 0.48,
+          "V4": 0.45,
+          "V5": 0.3,
+          "V6": 0.23
+        },
+        "negative_ableitungen": [
+          "aVR"
+        ],
+        "pathologisch_negativ": [],
+        "betroffene_gruppen": [],
+        "relevante_negativierung": false
+      },
+      "beurteilbar": true
+    },
+    "diagnose": {
+      "formulierungen": [
+        "Wahrscheinlich ein Normalbefund"
+      ],
+      "gemeldet": [
+        {
+          "klasse": "NORM",
+          "bezeichnung": "Normalbefund",
+          "p": 0.814,
+          "stufe": "wahrscheinlich",
+          "ebene": "zielklasse"
+        }
+      ],
+      "konfidenz_gating": [],
+      "verworfen": []
+    },
+    "true_classes": [
+      "IMI"
+    ],
+    "qualitaetssicherung": {
+      "resnet_probabilities": {
+        "NORM": 0.814,
+        "IMI": 0.356,
+        "LVH": 0.283
+      },
+      "confidence": "mittel",
+      "befund_schwelle": 0.5,
+      "gating_schwelle": 0.65
+    },
+    "qrs_kreuzpruefung": {
+      "messweg_ableitung_II_ms": 186.3,
+      "messweg_12_ableitungen_ms": 56.0,
+      "verwertbar": false,
+      "grund": "Messwege widersprechen sich: 186 ms gegen 56 ms (einmal schmal, einmal verbreitert)"
+    },
+    "pipeline_stage": "stufe_1_output_v2",
+    "plausibility": {
+      "pro_parameter": {
+        "hr_bpm": {
+          "value": 76.5,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "normal",
+          "kommentar": "Herzfrequenz 76.5 bpm (normal)."
+        },
+        "pr_interval_ms": {
+          "value": 55.1,
+          "plausibel": false,
+          "verwertbar": false,
+          "status": "artefakt",
+          "ref_status": null,
+          "kommentar": "PQ-Intervall 55.1 ms ist unrealistisch niedrig (plausibel 80–350 ms) — mutmaßliches Messartefakt, nicht als Befund verwertbar."
+        },
+        "qrs_duration_ms": {
+          "value": 186.3,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "ueber_norm",
+          "kommentar": "QRS-Dauer 186.3 ms (ueber norm)."
+        },
+        "qt_interval_ms": {
+          "value": 451.8,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "ueber_norm",
+          "kommentar": "QT-Intervall 451.8 ms (ueber norm)."
+        },
+        "qtc_bazett_ms": {
+          "value": 510.1,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "ueber_norm",
+          "kommentar": "QTc (Bazett) 510.1 ms (ueber norm)."
+        }
+      },
+      "warnungen": [
+        "QRS-Dauer 186.3 ms (ueber norm).",
+        "QT-Intervall 451.8 ms (ueber norm).",
+        "QTc (Bazett) 510.1 ms (ueber norm)."
+      ],
+      "artefakte": [
+        "PQ-Intervall 55.1 ms ist unrealistisch niedrig (plausibel 80–350 ms) — mutmaßliches Messartefakt, nicht als Befund verwertbar."
+      ],
+      "n_artefakte": 1,
+      "alle_verwertbar": false
+    },
+    "classical_features_verwertbar": {
+      "hr_bpm": 76.5,
+      "pr_interval_ms": null,
+      "qrs_duration_ms": null,
+      "qt_interval_ms": 451.8,
+      "qtc_bazett_ms": 510.1
+    }
+  },
+  {
+    "ecg_id": 12451,
+    "schema_version": 2,
+    "patient": {
+      "age_years": 55,
+      "sex": "weiblich"
+    },
+    "acquisition": {
+      "sampling_rate_hz": 500,
+      "duration_s": 10.0,
+      "n_leads": 12
+    },
+    "classical_features": {
+      "hr_bpm": 62.7,
+      "pr_interval_ms": 127.6,
+      "qrs_duration_ms": 89.8,
+      "qt_interval_ms": 226.9,
+      "qtc_bazett_ms": 232.1
+    },
+    "morphologie": {
+      "methodik": {
+        "amplituden": "Median-Schlag über alle Herzaktionen (Beat-Averaging)",
+        "nulllinie": "PQ-Segment (30-5 ms vor QRS-Beginn)",
+        "st_messpunkt": "J-Punkt + 60 ms"
+      },
+      "rhythmus": {
+        "beurteilbar": true,
+        "hr_mean_bpm": 63.0,
+        "rr_median_ms": 958.0,
+        "rr_variationskoeffizient": 0.022,
+        "regelmaessig": true,
+        "extrasystolen_anzahl": 0,
+        "extrasystolen_mit_kompensatorischer_pause": 0,
+        "extrasystolen_typ": null
+      },
+      "fiducial_offsets_samples": {
+        "qrs_onset": -22,
+        "qrs_offset": 25,
+        "t_offset": 59,
+        "t_peak": 52,
+        "qrs_quelle": "Ableitung II (dwt)"
+      },
+      "intervalle_aus_fiducials": {
+        "qrs_dauer_ms": 54.0,
+        "hinweis": "gegen CLBBB/CRBBB kalibriert; unterschätzt schmale Komplexe systematisch um ca. 20 ms — für den Befundtext ist der Wert aus build_fact_set massgeblich"
+      },
+      "lagetyp": {
+        "beurteilbar": true,
+        "achse_grad": 48.0,
+        "lagetyp": "Indifferenztyp"
+      },
+      "q_zacken": {
+        "beurteilbar": true,
+        "pathologische_q_ableitungen": [],
+        "betroffene_gruppen": [],
+        "pardee_q_vorhanden": false,
+        "details": {}
+      },
+      "r_progression": {
+        "beurteilbar": true,
+        "r_amplituden_mv": {
+          "V1": 0.15,
+          "V2": 0.2,
+          "V3": 0.85,
+          "V4": 1.18,
+          "V5": 1.22,
+          "V6": 0.94
+        },
+        "s_amplituden_mv": {
+          "V1": 0.86,
+          "V2": 0.55,
+          "V3": 0.1,
+          "V4": 0.05,
+          "V5": 0.0,
+          "V6": 0.0
+        },
+        "rs_verhaeltnis": {
+          "V1": 0.17,
+          "V2": 0.36,
+          "V3": 8.15,
+          "V4": 25.13,
+          "V5": null,
+          "V6": null
+        },
+        "qrs_muster": {
+          "V1": "rS",
+          "V2": "rS",
+          "V3": "Rs",
+          "V4": "Rs",
+          "V5": "qR",
+          "V6": "qR"
+        },
+        "rs_umschlag": "V3",
+        "rs_umschlag_normal": true,
+        "r_progression_normal": true,
+        "s_persistenz_v6": false,
+        "s_amplitude_v6_mv": 0.0
+      },
+      "st_strecke": {
+        "beurteilbar": true,
+        "messpunkt": "J-Punkt + 60 ms",
+        "abweichung_mv": {
+          "I": 0.01,
+          "II": -0.0,
+          "III": 0.02,
+          "aVR": 0.01,
+          "aVL": -0.02,
+          "aVF": 0.02,
+          "V1": 0.07,
+          "V2": 0.1,
+          "V3": 0.01,
+          "V4": -0.0,
+          "V5": -0.01,
+          "V6": -0.01
+        },
+        "hebungen": [],
+        "senkungen": [],
+        "hebung_gruppen": [],
+        "senkung_gruppen": [],
+        "relevante_hebung": false,
+        "relevante_senkung": false
+      },
+      "t_wellen": {
+        "beurteilbar": true,
+        "t_amplituden_mv": {
+          "I": -0.02,
+          "II": -0.03,
+          "III": 0.01,
+          "aVR": 0.02,
+          "aVL": -0.0,
+          "aVF": 0.01,
+          "V1": 0.06,
+          "V2": 0.1,
+          "V3": 0.01,
+          "V4": -0.0,
+          "V5": -0.01,
+          "V6": -0.01
+        },
+        "negative_ableitungen": [],
+        "pathologisch_negativ": [],
+        "betroffene_gruppen": [],
+        "relevante_negativierung": false
+      },
+      "beurteilbar": true
+    },
+    "diagnose": {
+      "formulierungen": [
+        "Nachweis eines Normalbefundes"
+      ],
+      "gemeldet": [
+        {
+          "klasse": "NORM",
+          "bezeichnung": "Normalbefund",
+          "p": 0.974,
+          "stufe": "sicher",
+          "ebene": "zielklasse"
+        }
+      ],
+      "konfidenz_gating": [],
+      "verworfen": []
+    },
+    "true_classes": [
+      "NORM"
+    ],
+    "qualitaetssicherung": {
+      "resnet_probabilities": {
+        "NORM": 0.974
+      },
+      "confidence": "hoch",
+      "befund_schwelle": 0.5,
+      "gating_schwelle": 0.65
+    },
+    "qrs_kreuzpruefung": {
+      "messweg_ableitung_II_ms": 89.8,
+      "messweg_12_ableitungen_ms": 54.0,
+      "verwertbar": true,
+      "grund": null
+    },
+    "pipeline_stage": "stufe_1_output_v2",
+    "plausibility": {
+      "pro_parameter": {
+        "hr_bpm": {
+          "value": 62.7,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "normal",
+          "kommentar": "Herzfrequenz 62.7 bpm (normal)."
+        },
+        "pr_interval_ms": {
+          "value": 127.6,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "normal",
+          "kommentar": "PQ-Intervall 127.6 ms (normal)."
+        },
+        "qrs_duration_ms": {
+          "value": 89.8,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "normal",
+          "kommentar": "QRS-Dauer 89.8 ms (normal)."
+        },
+        "qt_interval_ms": {
+          "value": 226.9,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "unter_norm",
+          "kommentar": "QT-Intervall 226.9 ms (unter norm)."
+        },
+        "qtc_bazett_ms": {
+          "value": 232.1,
+          "plausibel": false,
+          "verwertbar": false,
+          "status": "artefakt",
+          "ref_status": null,
+          "kommentar": "QTc (Bazett) 232.1 ms ist unrealistisch niedrig (plausibel 300–700 ms) — mutmaßliches Messartefakt, nicht als Befund verwertbar."
+        }
+      },
+      "warnungen": [
+        "QT-Intervall 226.9 ms (unter norm)."
+      ],
+      "artefakte": [
+        "QTc (Bazett) 232.1 ms ist unrealistisch niedrig (plausibel 300–700 ms) — mutmaßliches Messartefakt, nicht als Befund verwertbar."
+      ],
+      "n_artefakte": 1,
+      "alle_verwertbar": false
+    },
+    "classical_features_verwertbar": {
+      "hr_bpm": 62.7,
+      "pr_interval_ms": 127.6,
+      "qrs_duration_ms": 89.8,
+      "qt_interval_ms": 226.9,
+      "qtc_bazett_ms": null
+    }
+  },
+  {
+    "ecg_id": 14446,
+    "schema_version": 2,
+    "patient": {
+      "age_years": 300,
+      "sex": "weiblich"
+    },
+    "acquisition": {
+      "sampling_rate_hz": 500,
+      "duration_s": 10.0,
+      "n_leads": 12
+    },
+    "classical_features": {
+      "hr_bpm": 147.4,
+      "pr_interval_ms": 63.3,
+      "qrs_duration_ms": 108.5,
+      "qt_interval_ms": 202.3,
+      "qtc_bazett_ms": 316.0
+    },
+    "morphologie": {
+      "methodik": {
+        "amplituden": "Median-Schlag über alle Herzaktionen (Beat-Averaging)",
+        "nulllinie": "PQ-Segment (30-5 ms vor QRS-Beginn)",
+        "st_messpunkt": "J-Punkt + 60 ms"
+      },
+      "rhythmus": {
+        "beurteilbar": true,
+        "hr_mean_bpm": 157.0,
+        "rr_median_ms": 381.0,
+        "rr_variationskoeffizient": 0.187,
+        "regelmaessig": false,
+        "extrasystolen_anzahl": 0,
+        "extrasystolen_mit_kompensatorischer_pause": 0,
+        "extrasystolen_typ": null
+      },
+      "fiducial_offsets_samples": {
+        "qrs_onset": -8,
+        "qrs_offset": 19,
+        "t_offset": 58,
+        "t_peak": 52,
+        "qrs_quelle": "global (12 Ableitungen)"
+      },
+      "intervalle_aus_fiducials": {
+        "qrs_dauer_ms": 114.0,
+        "hinweis": "gegen CLBBB/CRBBB kalibriert; unterschätzt schmale Komplexe systematisch um ca. 20 ms — für den Befundtext ist der Wert aus build_fact_set massgeblich"
+      },
+      "lagetyp": {
+        "beurteilbar": true,
+        "achse_grad": 17.0,
+        "lagetyp": "Linkstyp"
+      },
+      "q_zacken": {
+        "beurteilbar": true,
+        "pathologische_q_ableitungen": [
+          "III",
+          "V1",
+          "V2"
+        ],
+        "betroffene_gruppen": [
+          "anteroseptal"
+        ],
+        "pardee_q_vorhanden": true,
+        "details": {
+          "III": {
+            "q_amplitude_mv": -0.22,
+            "q_dauer_ms": 12.0,
+            "r_amplitude_mv": 0.0,
+            "muster": "QS",
+            "lagetypbedingt": false,
+            "pathologisch": true
+          },
+          "V1": {
+            "q_amplitude_mv": -0.46,
+            "q_dauer_ms": 34.0,
+            "r_amplitude_mv": 0.0,
+            "muster": "QS",
+            "lagetypbedingt": false,
+            "pathologisch": true
+          },
+          "V2": {
+            "q_amplitude_mv": -0.54,
+            "q_dauer_ms": 52.0,
+            "r_amplitude_mv": 0.0,
+            "muster": "QS",
+            "lagetypbedingt": false,
+            "pathologisch": true
+          }
+        }
+      },
+      "r_progression": {
+        "beurteilbar": true,
+        "r_amplituden_mv": {
+          "V1": 0.0,
+          "V2": 0.0,
+          "V3": 0.39,
+          "V4": 1.04,
+          "V5": 2.2,
+          "V6": 2.36
+        },
+        "s_amplituden_mv": {
+          "V1": 0.0,
+          "V2": 0.0,
+          "V3": 1.02,
+          "V4": 0.56,
+          "V5": 0.45,
+          "V6": 0.28
+        },
+        "rs_verhaeltnis": {
+          "V1": null,
+          "V2": null,
+          "V3": 0.38,
+          "V4": 1.86,
+          "V5": 4.86,
+          "V6": 8.45
+        },
+        "qrs_muster": {
+          "V1": "QS",
+          "V2": "QS",
+          "V3": "rS",
+          "V4": "Rs",
+          "V5": "Rs",
+          "V6": "Rs"
+        },
+        "rs_umschlag": "V4",
+        "rs_umschlag_normal": true,
+        "r_progression_normal": true,
+        "s_persistenz_v6": true,
+        "s_amplitude_v6_mv": 0.28
+      },
+      "st_strecke": {
+        "beurteilbar": true,
+        "messpunkt": "J-Punkt + 60 ms",
+        "abweichung_mv": {
+          "I": -0.03,
+          "II": -0.07,
+          "III": -0.03,
+          "aVR": 0.05,
+          "aVL": 0.0,
+          "aVF": -0.05,
+          "V1": 0.06,
+          "V2": 0.06,
+          "V3": 0.01,
+          "V4": -0.09,
+          "V5": -0.14,
+          "V6": -0.13
+        },
+        "hebungen": [],
+        "senkungen": [
+          "V5",
+          "V6"
+        ],
+        "hebung_gruppen": [],
+        "senkung_gruppen": [
+          "lateral"
+        ],
+        "relevante_hebung": false,
+        "relevante_senkung": true
+      },
+      "t_wellen": {
+        "beurteilbar": true,
+        "t_amplituden_mv": {
+          "I": -0.03,
+          "II": -0.06,
+          "III": -0.03,
+          "aVR": 0.04,
+          "aVL": 0.01,
+          "aVF": -0.05,
+          "V1": 0.05,
+          "V2": 0.06,
+          "V3": 0.02,
+          "V4": -0.09,
+          "V5": -0.13,
+          "V6": -0.13
+        },
+        "negative_ableitungen": [
+          "V5",
+          "V6"
+        ],
+        "pathologisch_negativ": [
+          "V5",
+          "V6"
+        ],
+        "betroffene_gruppen": [
+          "lateral"
+        ],
+        "relevante_negativierung": true
+      },
+      "beurteilbar": true
+    },
+    "diagnose": {
+      "formulierungen": [
+        "Nachweis eines Vorderwandinfarktes",
+        "Wahrscheinlich eine linksventrikuläre Hypertrophie",
+        "Wahrscheinlich eine Ischämie"
+      ],
+      "gemeldet": [
+        {
+          "klasse": "AMI",
+          "bezeichnung": "Vorderwandinfarkt",
+          "p": 0.967,
+          "stufe": "sicher",
+          "ebene": "zielklasse"
+        },
+        {
+          "klasse": "LVH",
+          "bezeichnung": "linksventrikuläre Hypertrophie",
+          "p": 0.797,
+          "stufe": "wahrscheinlich",
+          "ebene": "zielklasse"
+        },
+        {
+          "klasse": "ISC_",
+          "bezeichnung": "Ischämie, unspezifisch",
+          "p": 0.747,
+          "stufe": "wahrscheinlich",
+          "ebene": "zielklasse"
+        }
+      ],
+      "konfidenz_gating": [],
+      "verworfen": [
+        {
+          "klasse": "IMI",
+          "p": 0.757,
+          "grund": "schwächer als AMI in derselben Superklasse MI"
+        },
+        {
+          "klasse": "NST_",
+          "p": 0.56,
+          "grund": "schwächer als ISC_ in derselben Superklasse STTC"
+        },
+        {
+          "klasse": "STTC",
+          "p": 0.544,
+          "grund": "schwächer als ISC_ in derselben Superklasse STTC"
+        }
+      ]
+    },
+    "true_classes": [
+      "AMI",
+      "NST_"
+    ],
+    "qualitaetssicherung": {
+      "resnet_probabilities": {
+        "AMI": 0.967,
+        "LVH": 0.797,
+        "IMI": 0.757,
+        "ISC_": 0.747,
+        "NST_": 0.56,
+        "STTC": 0.544,
+        "ISCA": 0.444,
+        "IVCD": 0.252,
+        "LAO/LAE": 0.236,
+        "ISCI": 0.218,
+        "_AVB": 0.175
+      },
+      "confidence": "hoch",
+      "befund_schwelle": 0.5,
+      "gating_schwelle": 0.65
+    },
+    "qrs_kreuzpruefung": {
+      "messweg_ableitung_II_ms": 108.5,
+      "messweg_12_ableitungen_ms": 114.0,
+      "verwertbar": true,
+      "grund": null
+    },
+    "pipeline_stage": "stufe_1_output_v2",
+    "plausibility": {
+      "pro_parameter": {
+        "hr_bpm": {
+          "value": 147.4,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "ueber_norm",
+          "kommentar": "Herzfrequenz 147.4 bpm (ueber norm)."
+        },
+        "pr_interval_ms": {
+          "value": 63.3,
+          "plausibel": false,
+          "verwertbar": false,
+          "status": "artefakt",
+          "ref_status": null,
+          "kommentar": "PQ-Intervall 63.3 ms ist unrealistisch niedrig (plausibel 80–350 ms) — mutmaßliches Messartefakt, nicht als Befund verwertbar."
+        },
+        "qrs_duration_ms": {
+          "value": 108.5,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "normal",
+          "kommentar": "QRS-Dauer 108.5 ms (normal)."
+        },
+        "qt_interval_ms": {
+          "value": 202.3,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "unter_norm",
+          "kommentar": "QT-Intervall 202.3 ms (unter norm)."
+        },
+        "qtc_bazett_ms": {
+          "value": 316.0,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "normal",
+          "kommentar": "QTc (Bazett) 316.0 ms (normal)."
+        }
+      },
+      "warnungen": [
+        "Herzfrequenz 147.4 bpm (ueber norm).",
+        "QT-Intervall 202.3 ms (unter norm)."
+      ],
+      "artefakte": [
+        "PQ-Intervall 63.3 ms ist unrealistisch niedrig (plausibel 80–350 ms) — mutmaßliches Messartefakt, nicht als Befund verwertbar."
+      ],
+      "n_artefakte": 1,
+      "alle_verwertbar": false
+    },
+    "classical_features_verwertbar": {
+      "hr_bpm": 147.4,
+      "pr_interval_ms": null,
+      "qrs_duration_ms": 108.5,
+      "qt_interval_ms": 202.3,
+      "qtc_bazett_ms": 316.0
+    }
+  },
+  {
+    "ecg_id": 14667,
+    "schema_version": 2,
+    "patient": {
+      "age_years": 86,
+      "sex": "weiblich"
+    },
+    "acquisition": {
+      "sampling_rate_hz": 500,
+      "duration_s": 10.0,
+      "n_leads": 12
+    },
+    "classical_features": {
+      "hr_bpm": 70.5,
+      "pr_interval_ms": 116.5,
+      "qrs_duration_ms": 119.6,
+      "qt_interval_ms": 352.5,
+      "qtc_bazett_ms": 383.4
+    },
+    "morphologie": {
+      "methodik": {
+        "amplituden": "Median-Schlag über alle Herzaktionen (Beat-Averaging)",
+        "nulllinie": "PQ-Segment (30-5 ms vor QRS-Beginn)",
+        "st_messpunkt": "J-Punkt + 60 ms"
+      },
+      "rhythmus": {
+        "beurteilbar": true,
+        "hr_mean_bpm": 68.0,
+        "rr_median_ms": 888.0,
+        "rr_variationskoeffizient": 0.124,
+        "regelmaessig": true,
+        "extrasystolen_anzahl": 2,
+        "extrasystolen_mit_kompensatorischer_pause": 0,
+        "extrasystolen_typ": "supraventrikulär (schmaler Kammerkomplex)"
+      },
+      "fiducial_offsets_samples": {
+        "qrs_onset": -38,
+        "qrs_offset": 18,
+        "t_offset": 138,
+        "t_peak": 130,
+        "qrs_quelle": "Ableitung II (dwt)"
+      },
+      "intervalle_aus_fiducials": {
+        "qrs_dauer_ms": 56.0,
+        "hinweis": "gegen CLBBB/CRBBB kalibriert; unterschätzt schmale Komplexe systematisch um ca. 20 ms — für den Befundtext ist der Wert aus build_fact_set massgeblich"
+      },
+      "lagetyp": {
+        "beurteilbar": true,
+        "achse_grad": 13.0,
+        "lagetyp": "Linkstyp"
+      },
+      "q_zacken": {
+        "beurteilbar": true,
+        "pathologische_q_ableitungen": [
+          "III",
+          "V1",
+          "V2",
+          "V3"
+        ],
+        "betroffene_gruppen": [
+          "anteroseptal"
+        ],
+        "pardee_q_vorhanden": true,
+        "details": {
+          "III": {
+            "q_amplitude_mv": -0.44,
+            "q_dauer_ms": 26.0,
+            "r_amplitude_mv": 0.0,
+            "muster": "QS",
+            "lagetypbedingt": false,
+            "pathologisch": true
+          },
+          "V1": {
+            "q_amplitude_mv": -1.05,
+            "q_dauer_ms": 50.0,
+            "r_amplitude_mv": 0.0,
+            "muster": "QS",
+            "lagetypbedingt": false,
+            "pathologisch": true
+          },
+          "V2": {
+            "q_amplitude_mv": -0.89,
+            "q_dauer_ms": 48.0,
+            "r_amplitude_mv": 0.15,
+            "muster": "qR",
+            "lagetypbedingt": false,
+            "pathologisch": true
+          },
+          "V3": {
+            "q_amplitude_mv": -1.07,
+            "q_dauer_ms": 42.0,
+            "r_amplitude_mv": 0.0,
+            "muster": "QS",
+            "lagetypbedingt": false,
+            "pathologisch": true
+          }
+        }
+      },
+      "r_progression": {
+        "beurteilbar": true,
+        "r_amplituden_mv": {
+          "V1": 0.0,
+          "V2": 0.15,
+          "V3": 0.0,
+          "V4": 0.42,
+          "V5": 1.07,
+          "V6": 1.04
+        },
+        "s_amplituden_mv": {
+          "V1": 0.0,
+          "V2": 0.0,
+          "V3": 0.0,
+          "V4": 0.85,
+          "V5": 0.0,
+          "V6": 0.0
+        },
+        "rs_verhaeltnis": {
+          "V1": null,
+          "V2": null,
+          "V3": null,
+          "V4": 0.5,
+          "V5": null,
+          "V6": null
+        },
+        "qrs_muster": {
+          "V1": "QS",
+          "V2": "qR",
+          "V3": "QS",
+          "V4": "rS",
+          "V5": "Rs",
+          "V6": "Rs"
+        },
+        "rs_umschlag": "V2",
+        "rs_umschlag_normal": false,
+        "r_progression_normal": false,
+        "s_persistenz_v6": false,
+        "s_amplitude_v6_mv": 0.0
+      },
+      "st_strecke": {
+        "beurteilbar": true,
+        "messpunkt": "J-Punkt + 60 ms",
+        "abweichung_mv": {
+          "I": 0.02,
+          "II": 0.06,
+          "III": 0.03,
+          "aVR": -0.02,
+          "aVL": 0.0,
+          "aVF": 0.05,
+          "V1": 0.05,
+          "V2": 0.21,
+          "V3": 0.29,
+          "V4": 0.2,
+          "V5": 0.02,
+          "V6": 0.0
+        },
+        "hebungen": [
+          "V2",
+          "V3",
+          "V4"
+        ],
+        "senkungen": [],
+        "hebung_gruppen": [
+          "anteroseptal"
+        ],
+        "senkung_gruppen": [],
+        "relevante_hebung": true,
+        "relevante_senkung": false
+      },
+      "t_wellen": {
+        "beurteilbar": true,
+        "t_amplituden_mv": {
+          "I": 0.13,
+          "II": 0.25,
+          "III": 0.13,
+          "aVR": -0.19,
+          "aVL": 0.01,
+          "aVF": 0.2,
+          "V1": 0.06,
+          "V2": 0.58,
+          "V3": 0.85,
+          "V4": 0.72,
+          "V5": 0.25,
+          "V6": 0.24
+        },
+        "negative_ableitungen": [
+          "aVR"
+        ],
+        "pathologisch_negativ": [],
+        "betroffene_gruppen": [],
+        "relevante_negativierung": false
+      },
+      "beurteilbar": true
+    },
+    "diagnose": {
+      "formulierungen": [
+        "Nachweis eines Vorderwandinfarktes"
+      ],
+      "gemeldet": [
+        {
+          "klasse": "AMI",
+          "bezeichnung": "Vorderwandinfarkt",
+          "p": 0.995,
+          "stufe": "sicher",
+          "ebene": "zielklasse"
+        }
+      ],
+      "konfidenz_gating": [],
+      "verworfen": []
+    },
+    "true_classes": [
+      "AMI"
+    ],
+    "qualitaetssicherung": {
+      "resnet_probabilities": {
+        "AMI": 0.995,
+        "LAO/LAE": 0.275
+      },
+      "confidence": "hoch",
+      "befund_schwelle": 0.5,
+      "gating_schwelle": 0.65
+    },
+    "qrs_kreuzpruefung": {
+      "messweg_ableitung_II_ms": 119.6,
+      "messweg_12_ableitungen_ms": 56.0,
+      "verwertbar": true,
+      "grund": null
+    },
+    "pipeline_stage": "stufe_1_output_v2",
+    "plausibility": {
+      "pro_parameter": {
+        "hr_bpm": {
+          "value": 70.5,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "normal",
+          "kommentar": "Herzfrequenz 70.5 bpm (normal)."
+        },
+        "pr_interval_ms": {
+          "value": 116.5,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "unter_norm",
+          "kommentar": "PQ-Intervall 116.5 ms (unter norm)."
+        },
+        "qrs_duration_ms": {
+          "value": 119.6,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "normal",
+          "kommentar": "QRS-Dauer 119.6 ms (normal)."
+        },
+        "qt_interval_ms": {
+          "value": 352.5,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "normal",
+          "kommentar": "QT-Intervall 352.5 ms (normal)."
+        },
+        "qtc_bazett_ms": {
+          "value": 383.4,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "normal",
+          "kommentar": "QTc (Bazett) 383.4 ms (normal)."
+        }
+      },
+      "warnungen": [
+        "PQ-Intervall 116.5 ms (unter norm)."
+      ],
+      "artefakte": [],
+      "n_artefakte": 0,
+      "alle_verwertbar": true
+    },
+    "classical_features_verwertbar": {
+      "hr_bpm": 70.5,
+      "pr_interval_ms": 116.5,
+      "qrs_duration_ms": 119.6,
+      "qt_interval_ms": 352.5,
+      "qtc_bazett_ms": 383.4
+    }
+  },
+  {
+    "ecg_id": 15094,
+    "schema_version": 2,
+    "patient": {
+      "age_years": 60,
+      "sex": "männlich"
+    },
+    "acquisition": {
+      "sampling_rate_hz": 500,
+      "duration_s": 10.0,
+      "n_leads": 12
+    },
+    "classical_features": {
+      "hr_bpm": 66.1,
+      "pr_interval_ms": 127.6,
+      "qrs_duration_ms": 129.4,
+      "qt_interval_ms": 423.4,
+      "qtc_bazett_ms": 446.0
+    },
+    "morphologie": {
+      "methodik": {
+        "amplituden": "Median-Schlag über alle Herzaktionen (Beat-Averaging)",
+        "nulllinie": "PQ-Segment (30-5 ms vor QRS-Beginn)",
+        "st_messpunkt": "J-Punkt + 60 ms"
+      },
+      "rhythmus": {
+        "beurteilbar": true,
+        "hr_mean_bpm": 65.0,
+        "rr_median_ms": 917.0,
+        "rr_variationskoeffizient": 0.058,
+        "regelmaessig": true,
+        "extrasystolen_anzahl": 0,
+        "extrasystolen_mit_kompensatorischer_pause": 0,
+        "extrasystolen_typ": null
+      },
+      "fiducial_offsets_samples": {
+        "qrs_onset": -12,
+        "qrs_offset": 20,
+        "t_offset": 172,
+        "t_peak": 134,
+        "qrs_quelle": "global (12 Ableitungen)"
+      },
+      "intervalle_aus_fiducials": {
+        "qrs_dauer_ms": 72.0,
+        "hinweis": "gegen CLBBB/CRBBB kalibriert; unterschätzt schmale Komplexe systematisch um ca. 20 ms — für den Befundtext ist der Wert aus build_fact_set massgeblich"
+      },
+      "lagetyp": {
+        "beurteilbar": true,
+        "achse_grad": -15.0,
+        "lagetyp": "Linkstyp"
+      },
+      "q_zacken": {
+        "beurteilbar": true,
+        "pathologische_q_ableitungen": [],
+        "betroffene_gruppen": [],
+        "pardee_q_vorhanden": false,
+        "details": {
+          "I": {
+            "q_amplitude_mv": -0.12,
+            "q_dauer_ms": 10.0,
+            "r_amplitude_mv": 1.3,
+            "muster": "qR",
+            "lagetypbedingt": false,
+            "pathologisch": false
+          },
+          "aVL": {
+            "q_amplitude_mv": -0.16,
+            "q_dauer_ms": 12.0,
+            "r_amplitude_mv": 1.1,
+            "muster": "qR",
+            "lagetypbedingt": false,
+            "pathologisch": false
+          }
+        }
+      },
+      "r_progression": {
+        "beurteilbar": true,
+        "r_amplituden_mv": {
+          "V1": 0.19,
+          "V2": 0.87,
+          "V3": 1.44,
+          "V4": 1.59,
+          "V5": 1.36,
+          "V6": 0.98
+        },
+        "s_amplituden_mv": {
+          "V1": 1.02,
+          "V2": 1.53,
+          "V3": 1.39,
+          "V4": 1.02,
+          "V5": 0.54,
+          "V6": 0.13
+        },
+        "rs_verhaeltnis": {
+          "V1": 0.19,
+          "V2": 0.57,
+          "V3": 1.04,
+          "V4": 1.56,
+          "V5": 2.5,
+          "V6": 7.29
+        },
+        "qrs_muster": {
+          "V1": "rS",
+          "V2": "rS",
+          "V3": "Rs",
+          "V4": "Rs",
+          "V5": "Rs",
+          "V6": "Rs"
+        },
+        "rs_umschlag": "V3",
+        "rs_umschlag_normal": true,
+        "r_progression_normal": true,
+        "s_persistenz_v6": true,
+        "s_amplitude_v6_mv": 0.13
+      },
+      "st_strecke": {
+        "beurteilbar": true,
+        "messpunkt": "J-Punkt + 60 ms",
+        "abweichung_mv": {
+          "I": 0.0,
+          "II": 0.01,
+          "III": 0.03,
+          "aVR": 0.01,
+          "aVL": -0.01,
+          "aVF": 0.01,
+          "V1": 0.07,
+          "V2": 0.15,
+          "V3": 0.1,
+          "V4": 0.01,
+          "V5": -0.01,
+          "V6": -0.01
+        },
+        "hebungen": [],
+        "senkungen": [],
+        "hebung_gruppen": [],
+        "senkung_gruppen": [],
+        "relevante_hebung": false,
+        "relevante_senkung": false
+      },
+      "t_wellen": {
+        "beurteilbar": true,
+        "t_amplituden_mv": {
+          "I": 0.29,
+          "II": 0.27,
+          "III": -0.01,
+          "aVR": -0.28,
+          "aVL": 0.16,
+          "aVF": 0.13,
+          "V1": 0.18,
+          "V2": 0.86,
+          "V3": 0.68,
+          "V4": 0.41,
+          "V5": 0.29,
+          "V6": 0.18
+        },
+        "negative_ableitungen": [
+          "aVR"
+        ],
+        "pathologisch_negativ": [],
+        "betroffene_gruppen": [],
+        "relevante_negativierung": false
+      },
+      "beurteilbar": true
+    },
+    "diagnose": {
+      "formulierungen": [
+        "Nachweis eines Normalbefundes"
+      ],
+      "gemeldet": [
+        {
+          "klasse": "NORM",
+          "bezeichnung": "Normalbefund",
+          "p": 0.968,
+          "stufe": "sicher",
+          "ebene": "zielklasse"
+        }
+      ],
+      "konfidenz_gating": [],
+      "verworfen": []
+    },
+    "true_classes": [
+      "NORM"
+    ],
+    "qualitaetssicherung": {
+      "resnet_probabilities": {
+        "NORM": 0.968,
+        "IVCD": 0.109
+      },
+      "confidence": "hoch",
+      "befund_schwelle": 0.5,
+      "gating_schwelle": 0.65
+    },
+    "qrs_kreuzpruefung": {
+      "messweg_ableitung_II_ms": 129.4,
+      "messweg_12_ableitungen_ms": 72.0,
+      "verwertbar": false,
+      "grund": "Messwege widersprechen sich: 129 ms gegen 72 ms (einmal schmal, einmal verbreitert)"
+    },
+    "pipeline_stage": "stufe_1_output_v2",
+    "plausibility": {
+      "pro_parameter": {
+        "hr_bpm": {
+          "value": 66.1,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "normal",
+          "kommentar": "Herzfrequenz 66.1 bpm (normal)."
+        },
+        "pr_interval_ms": {
+          "value": 127.6,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "normal",
+          "kommentar": "PQ-Intervall 127.6 ms (normal)."
+        },
+        "qrs_duration_ms": {
+          "value": 129.4,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "ueber_norm",
+          "kommentar": "QRS-Dauer 129.4 ms (ueber norm)."
+        },
+        "qt_interval_ms": {
+          "value": 423.4,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "normal",
+          "kommentar": "QT-Intervall 423.4 ms (normal)."
+        },
+        "qtc_bazett_ms": {
+          "value": 446.0,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "ueber_norm",
+          "kommentar": "QTc (Bazett) 446.0 ms (ueber norm)."
+        }
+      },
+      "warnungen": [
+        "QRS-Dauer 129.4 ms (ueber norm).",
+        "QTc (Bazett) 446.0 ms (ueber norm)."
+      ],
+      "artefakte": [],
+      "n_artefakte": 0,
+      "alle_verwertbar": true
+    },
+    "classical_features_verwertbar": {
+      "hr_bpm": 66.1,
+      "pr_interval_ms": 127.6,
+      "qrs_duration_ms": null,
+      "qt_interval_ms": 423.4,
+      "qtc_bazett_ms": 446.0
+    }
+  },
+  {
+    "ecg_id": 16101,
+    "schema_version": 2,
+    "patient": {
+      "age_years": 68,
+      "sex": "weiblich"
+    },
+    "acquisition": {
+      "sampling_rate_hz": 500,
+      "duration_s": 10.0,
+      "n_leads": 12
+    },
+    "classical_features": {
+      "hr_bpm": 71.1,
+      "pr_interval_ms": 152.4,
+      "qrs_duration_ms": 198.0,
+      "qt_interval_ms": 588.0,
+      "qtc_bazett_ms": 640.1
+    },
+    "morphologie": {
+      "methodik": {
+        "amplituden": "Median-Schlag über alle Herzaktionen (Beat-Averaging)",
+        "nulllinie": "PQ-Segment (30-5 ms vor QRS-Beginn)",
+        "st_messpunkt": "J-Punkt + 60 ms"
+      },
+      "rhythmus": {
+        "beurteilbar": true,
+        "hr_mean_bpm": 71.0,
+        "rr_median_ms": 845.0,
+        "rr_variationskoeffizient": 0.013,
+        "regelmaessig": true,
+        "extrasystolen_anzahl": 0,
+        "extrasystolen_mit_kompensatorischer_pause": 0,
+        "extrasystolen_typ": null
+      },
+      "fiducial_offsets_samples": {
+        "qrs_onset": -58,
+        "qrs_offset": 32,
+        "t_offset": 203,
+        "t_peak": 186,
+        "qrs_quelle": "Ableitung II (dwt)"
+      },
+      "intervalle_aus_fiducials": {
+        "qrs_dauer_ms": 66.0,
+        "hinweis": "gegen CLBBB/CRBBB kalibriert; unterschätzt schmale Komplexe systematisch um ca. 20 ms — für den Befundtext ist der Wert aus build_fact_set massgeblich"
+      },
+      "lagetyp": {
+        "beurteilbar": true,
+        "achse_grad": 31.0,
+        "lagetyp": "Indifferenztyp"
+      },
+      "q_zacken": {
+        "beurteilbar": true,
+        "pathologische_q_ableitungen": [],
+        "betroffene_gruppen": [],
+        "pardee_q_vorhanden": false,
+        "details": {
+          "I": {
+            "q_amplitude_mv": -0.12,
+            "q_dauer_ms": 10.0,
+            "r_amplitude_mv": 1.14,
+            "muster": "qRs",
+            "lagetypbedingt": false,
+            "pathologisch": false
+          },
+          "aVL": {
+            "q_amplitude_mv": -0.1,
+            "q_dauer_ms": 8.0,
+            "r_amplitude_mv": 0.79,
+            "muster": "qRs",
+            "lagetypbedingt": false,
+            "pathologisch": false
+          }
+        }
+      },
+      "r_progression": {
+        "beurteilbar": true,
+        "r_amplituden_mv": {
+          "V1": 0.18,
+          "V2": 0.31,
+          "V3": 0.38,
+          "V4": 0.4,
+          "V5": 1.1,
+          "V6": 1.0
+        },
+        "s_amplituden_mv": {
+          "V1": 1.21,
+          "V2": 0.98,
+          "V3": 0.8,
+          "V4": 0.19,
+          "V5": 0.02,
+          "V6": 0.07
+        },
+        "rs_verhaeltnis": {
+          "V1": 0.14,
+          "V2": 0.32,
+          "V3": 0.47,
+          "V4": 2.13,
+          "V5": 46.38,
+          "V6": 14.73
+        },
+        "qrs_muster": {
+          "V1": "rS",
+          "V2": "rS",
+          "V3": "rS",
+          "V4": "Rs",
+          "V5": "Rs",
+          "V6": "Rs"
+        },
+        "rs_umschlag": "V4",
+        "rs_umschlag_normal": true,
+        "r_progression_normal": true,
+        "s_persistenz_v6": false,
+        "s_amplitude_v6_mv": 0.07
+      },
+      "st_strecke": {
+        "beurteilbar": true,
+        "messpunkt": "J-Punkt + 60 ms",
+        "abweichung_mv": {
+          "I": -0.19,
+          "II": -0.04,
+          "III": 0.17,
+          "aVR": 0.12,
+          "aVL": -0.18,
+          "aVF": 0.06,
+          "V1": 0.14,
+          "V2": 0.04,
+          "V3": 0.06,
+          "V4": 0.0,
+          "V5": -0.02,
+          "V6": -0.06
+        },
+        "hebungen": [
+          "III",
+          "aVR",
+          "V1"
+        ],
+        "senkungen": [
+          "I",
+          "aVL"
+        ],
+        "hebung_gruppen": [],
+        "senkung_gruppen": [
+          "lateral"
+        ],
+        "relevante_hebung": false,
+        "relevante_senkung": true
+      },
+      "t_wellen": {
+        "beurteilbar": true,
+        "t_amplituden_mv": {
+          "I": -0.01,
+          "II": 0.12,
+          "III": 0.13,
+          "aVR": -0.06,
+          "aVL": -0.07,
+          "aVF": 0.12,
+          "V1": 0.01,
+          "V2": 0.09,
+          "V3": 0.16,
+          "V4": 0.14,
+          "V5": 0.13,
+          "V6": 0.12
+        },
+        "negative_ableitungen": [],
+        "pathologisch_negativ": [],
+        "betroffene_gruppen": [],
+        "relevante_negativierung": false
+      },
+      "beurteilbar": true
+    },
+    "diagnose": {
+      "formulierungen": [
+        "Nachweis eines Hinterwandinfarktes",
+        "Wahrscheinlich eine Ischämie der Vorderwand"
+      ],
+      "gemeldet": [
+        {
+          "klasse": "IMI",
+          "bezeichnung": "Hinterwand-/Inferiorinfarkt",
+          "p": 0.867,
+          "stufe": "sicher",
+          "ebene": "zielklasse"
+        },
+        {
+          "klasse": "ISCA",
+          "bezeichnung": "Ischämie, anteriore Ableitungen",
+          "p": 0.817,
+          "stufe": "wahrscheinlich",
+          "ebene": "zielklasse"
+        }
+      ],
+      "konfidenz_gating": [],
+      "verworfen": [
+        {
+          "klasse": "STTC",
+          "p": 0.639,
+          "grund": "schwächer als ISCA in derselben Superklasse STTC"
+        }
+      ]
+    },
+    "true_classes": [
+      "STTC"
+    ],
+    "qualitaetssicherung": {
+      "resnet_probabilities": {
+        "IMI": 0.867,
+        "ISCA": 0.817,
+        "STTC": 0.639,
+        "NST_": 0.41,
+        "ISC_": 0.363,
+        "LAO/LAE": 0.305,
+        "LVH": 0.246,
+        "_AVB": 0.189,
+        "IVCD": 0.173,
+        "AMI": 0.172
+      },
+      "confidence": "hoch",
+      "befund_schwelle": 0.5,
+      "gating_schwelle": 0.65
+    },
+    "qrs_kreuzpruefung": {
+      "messweg_ableitung_II_ms": 198.0,
+      "messweg_12_ableitungen_ms": 66.0,
+      "verwertbar": false,
+      "grund": "Messwege widersprechen sich: 198 ms gegen 66 ms (einmal schmal, einmal verbreitert)"
+    },
+    "pipeline_stage": "stufe_1_output_v2",
+    "plausibility": {
+      "pro_parameter": {
+        "hr_bpm": {
+          "value": 71.1,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "normal",
+          "kommentar": "Herzfrequenz 71.1 bpm (normal)."
+        },
+        "pr_interval_ms": {
+          "value": 152.4,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "normal",
+          "kommentar": "PQ-Intervall 152.4 ms (normal)."
+        },
+        "qrs_duration_ms": {
+          "value": 198.0,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "ueber_norm",
+          "kommentar": "QRS-Dauer 198.0 ms (ueber norm)."
+        },
+        "qt_interval_ms": {
+          "value": 588.0,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "ueber_norm",
+          "kommentar": "QT-Intervall 588.0 ms (ueber norm)."
+        },
+        "qtc_bazett_ms": {
+          "value": 640.1,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "ueber_norm",
+          "kommentar": "QTc (Bazett) 640.1 ms (ueber norm)."
+        }
+      },
+      "warnungen": [
+        "QRS-Dauer 198.0 ms (ueber norm).",
+        "QT-Intervall 588.0 ms (ueber norm).",
+        "QTc (Bazett) 640.1 ms (ueber norm)."
+      ],
+      "artefakte": [],
+      "n_artefakte": 0,
+      "alle_verwertbar": true
+    },
+    "classical_features_verwertbar": {
+      "hr_bpm": 71.1,
+      "pr_interval_ms": 152.4,
+      "qrs_duration_ms": null,
+      "qt_interval_ms": 588.0,
+      "qtc_bazett_ms": 640.1
+    }
+  },
+  {
+    "ecg_id": 17084,
+    "schema_version": 2,
+    "patient": {
+      "age_years": 57,
+      "sex": "weiblich"
+    },
+    "acquisition": {
+      "sampling_rate_hz": 500,
+      "duration_s": 10.0,
+      "n_leads": 12
+    },
+    "classical_features": {
+      "hr_bpm": 82.2,
+      "pr_interval_ms": 124.0,
+      "qrs_duration_ms": 103.0,
+      "qt_interval_ms": 320.5,
+      "qtc_bazett_ms": 374.8
+    },
+    "morphologie": {
+      "methodik": {
+        "amplituden": "Median-Schlag über alle Herzaktionen (Beat-Averaging)",
+        "nulllinie": "PQ-Segment (30-5 ms vor QRS-Beginn)",
+        "st_messpunkt": "J-Punkt + 60 ms"
+      },
+      "rhythmus": {
+        "beurteilbar": true,
+        "hr_mean_bpm": 80.0,
+        "rr_median_ms": 749.0,
+        "rr_variationskoeffizient": 0.09,
+        "regelmaessig": true,
+        "extrasystolen_anzahl": 0,
+        "extrasystolen_mit_kompensatorischer_pause": 0,
+        "extrasystolen_typ": null
+      },
+      "fiducial_offsets_samples": {
+        "qrs_onset": -21,
+        "qrs_offset": 29,
+        "t_offset": 138,
+        "t_peak": 109,
+        "qrs_quelle": "Ableitung II (dwt)"
+      },
+      "intervalle_aus_fiducials": {
+        "qrs_dauer_ms": 58.0,
+        "hinweis": "gegen CLBBB/CRBBB kalibriert; unterschätzt schmale Komplexe systematisch um ca. 20 ms — für den Befundtext ist der Wert aus build_fact_set massgeblich"
+      },
+      "lagetyp": {
+        "beurteilbar": true,
+        "achse_grad": 67.0,
+        "lagetyp": "Steiltyp"
+      },
+      "q_zacken": {
+        "beurteilbar": true,
+        "pathologische_q_ableitungen": [],
+        "betroffene_gruppen": [],
+        "pardee_q_vorhanden": false,
+        "details": {
+          "aVL": {
+            "q_amplitude_mv": -0.22,
+            "q_dauer_ms": 36.0,
+            "r_amplitude_mv": 0.0,
+            "muster": "QS",
+            "lagetypbedingt": true,
+            "pathologisch": false
+          }
+        }
+      },
+      "r_progression": {
+        "beurteilbar": true,
+        "r_amplituden_mv": {
+          "V1": 0.2,
+          "V2": 0.58,
+          "V3": 0.98,
+          "V4": 3.2,
+          "V5": 2.4,
+          "V6": 1.29
+        },
+        "s_amplituden_mv": {
+          "V1": 0.88,
+          "V2": 0.94,
+          "V3": 0.52,
+          "V4": 0.15,
+          "V5": 0.08,
+          "V6": 0.07
+        },
+        "rs_verhaeltnis": {
+          "V1": 0.22,
+          "V2": 0.62,
+          "V3": 1.87,
+          "V4": 20.89,
+          "V5": 30.5,
+          "V6": 19.15
+        },
+        "qrs_muster": {
+          "V1": "rS",
+          "V2": "rS",
+          "V3": "Rs",
+          "V4": "Rs",
+          "V5": "qRs",
+          "V6": "qRs"
+        },
+        "rs_umschlag": "V3",
+        "rs_umschlag_normal": true,
+        "r_progression_normal": true,
+        "s_persistenz_v6": false,
+        "s_amplitude_v6_mv": 0.07
+      },
+      "st_strecke": {
+        "beurteilbar": true,
+        "messpunkt": "J-Punkt + 60 ms",
+        "abweichung_mv": {
+          "I": 0.01,
+          "II": -0.01,
+          "III": -0.0,
+          "aVR": -0.01,
+          "aVL": 0.0,
+          "aVF": -0.01,
+          "V1": 0.03,
+          "V2": 0.1,
+          "V3": 0.05,
+          "V4": -0.02,
+          "V5": -0.02,
+          "V6": -0.01
+        },
+        "hebungen": [],
+        "senkungen": [],
+        "hebung_gruppen": [],
+        "senkung_gruppen": [],
+        "relevante_hebung": false,
+        "relevante_senkung": false
+      },
+      "t_wellen": {
+        "beurteilbar": true,
+        "t_amplituden_mv": {
+          "I": 0.21,
+          "II": 0.26,
+          "III": 0.05,
+          "aVR": -0.23,
+          "aVL": 0.09,
+          "aVF": 0.16,
+          "V1": -0.01,
+          "V2": 0.4,
+          "V3": 0.64,
+          "V4": 0.96,
+          "V5": 0.66,
+          "V6": 0.35
+        },
+        "negative_ableitungen": [
+          "aVR"
+        ],
+        "pathologisch_negativ": [],
+        "betroffene_gruppen": [],
+        "relevante_negativierung": false
+      },
+      "beurteilbar": true
+    },
+    "diagnose": {
+      "formulierungen": [
+        "Wahrscheinlich ein Normalbefund"
+      ],
+      "gemeldet": [
+        {
+          "klasse": "NORM",
+          "bezeichnung": "Normalbefund",
+          "p": 0.69,
+          "stufe": "wahrscheinlich",
+          "ebene": "zielklasse"
+        }
+      ],
+      "konfidenz_gating": [],
+      "verworfen": [
+        {
+          "klasse": "LVH",
+          "p": 0.666,
+          "grund": "schwächer als NORM (0.690)"
+        }
+      ],
+      "vorbehalt": "Nebenbefundlich lag linksventrikuläre Hypertrophie knapp über der Befundschwelle, jedoch deutlich unterhalb des Normalbefundes."
+    },
+    "true_classes": [
+      "IVCD"
+    ],
+    "qualitaetssicherung": {
+      "resnet_probabilities": {
+        "NORM": 0.69,
+        "LVH": 0.666,
+        "NST_": 0.395,
+        "ISCI": 0.309,
+        "ISC_": 0.127
+      },
+      "confidence": "mittel",
+      "befund_schwelle": 0.5,
+      "gating_schwelle": 0.65
+    },
+    "qrs_kreuzpruefung": {
+      "messweg_ableitung_II_ms": 103.0,
+      "messweg_12_ableitungen_ms": 58.0,
+      "verwertbar": true,
+      "grund": null
+    },
+    "pipeline_stage": "stufe_1_output_v2",
+    "plausibility": {
+      "pro_parameter": {
+        "hr_bpm": {
+          "value": 82.2,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "normal",
+          "kommentar": "Herzfrequenz 82.2 bpm (normal)."
+        },
+        "pr_interval_ms": {
+          "value": 124.0,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "normal",
+          "kommentar": "PQ-Intervall 124.0 ms (normal)."
+        },
+        "qrs_duration_ms": {
+          "value": 103.0,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "normal",
+          "kommentar": "QRS-Dauer 103.0 ms (normal)."
+        },
+        "qt_interval_ms": {
+          "value": 320.5,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "unter_norm",
+          "kommentar": "QT-Intervall 320.5 ms (unter norm)."
+        },
+        "qtc_bazett_ms": {
+          "value": 374.8,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "normal",
+          "kommentar": "QTc (Bazett) 374.8 ms (normal)."
+        }
+      },
+      "warnungen": [
+        "QT-Intervall 320.5 ms (unter norm)."
+      ],
+      "artefakte": [],
+      "n_artefakte": 0,
+      "alle_verwertbar": true
+    },
+    "classical_features_verwertbar": {
+      "hr_bpm": 82.2,
+      "pr_interval_ms": 124.0,
+      "qrs_duration_ms": 103.0,
+      "qt_interval_ms": 320.5,
+      "qtc_bazett_ms": 374.8
+    }
+  },
+  {
+    "ecg_id": 19858,
+    "schema_version": 2,
+    "patient": {
+      "age_years": 84,
+      "sex": "weiblich"
+    },
+    "acquisition": {
+      "sampling_rate_hz": 500,
+      "duration_s": 10.0,
+      "n_leads": 12
+    },
+    "classical_features": {
+      "hr_bpm": 70.0,
+      "pr_interval_ms": 156.2,
+      "qrs_duration_ms": 83.4,
+      "qt_interval_ms": 377.4,
+      "qtc_bazett_ms": 407.7
+    },
+    "morphologie": {
+      "methodik": {
+        "amplituden": "Median-Schlag über alle Herzaktionen (Beat-Averaging)",
+        "nulllinie": "PQ-Segment (30-5 ms vor QRS-Beginn)",
+        "st_messpunkt": "J-Punkt + 60 ms"
+      },
+      "rhythmus": {
+        "beurteilbar": true,
+        "hr_mean_bpm": 70.0,
+        "rr_median_ms": 860.0,
+        "rr_variationskoeffizient": 0.014,
+        "regelmaessig": true,
+        "extrasystolen_anzahl": 0,
+        "extrasystolen_mit_kompensatorischer_pause": 0,
+        "extrasystolen_typ": null
+      },
+      "fiducial_offsets_samples": {
+        "qrs_onset": -18,
+        "qrs_offset": 50,
+        "t_offset": 165,
+        "t_peak": 155,
+        "qrs_quelle": "global (12 Ableitungen)"
+      },
+      "intervalle_aus_fiducials": {
+        "qrs_dauer_ms": null,
+        "hinweis": "gegen CLBBB/CRBBB kalibriert; unterschätzt schmale Komplexe systematisch um ca. 20 ms — für den Befundtext ist der Wert aus build_fact_set massgeblich"
+      },
+      "lagetyp": {
+        "beurteilbar": true,
+        "achse_grad": -27.0,
+        "lagetyp": "Linkstyp"
+      },
+      "q_zacken": {
+        "beurteilbar": true,
+        "pathologische_q_ableitungen": [
+          "III",
+          "aVF",
+          "V1",
+          "V4"
+        ],
+        "betroffene_gruppen": [
+          "inferior",
+          "anteroseptal"
+        ],
+        "pardee_q_vorhanden": true,
+        "details": {
+          "III": {
+            "q_amplitude_mv": -1.2,
+            "q_dauer_ms": 136.0,
+            "r_amplitude_mv": 0.0,
+            "muster": "QS",
+            "lagetypbedingt": false,
+            "pathologisch": true
+          },
+          "aVF": {
+            "q_amplitude_mv": -0.84,
+            "q_dauer_ms": 136.0,
+            "r_amplitude_mv": 0.0,
+            "muster": "QS",
+            "lagetypbedingt": false,
+            "pathologisch": true
+          },
+          "V1": {
+            "q_amplitude_mv": -2.57,
+            "q_dauer_ms": 126.0,
+            "r_amplitude_mv": 0.16,
+            "muster": "qR",
+            "lagetypbedingt": false,
+            "pathologisch": true
+          },
+          "V4": {
+            "q_amplitude_mv": -0.83,
+            "q_dauer_ms": 126.0,
+            "r_amplitude_mv": 0.0,
+            "muster": "QS",
+            "lagetypbedingt": false,
+            "pathologisch": true
+          }
+        }
+      },
+      "r_progression": {
+        "beurteilbar": true,
+        "r_amplituden_mv": {
+          "V1": 0.16,
+          "V2": 0.34,
+          "V3": 0.28,
+          "V4": 0.0,
+          "V5": 0.41,
+          "V6": 1.09
+        },
+        "s_amplituden_mv": {
+          "V1": 0.0,
+          "V2": 4.04,
+          "V3": 3.21,
+          "V4": 0.0,
+          "V5": 0.58,
+          "V6": 0.36
+        },
+        "rs_verhaeltnis": {
+          "V1": null,
+          "V2": 0.09,
+          "V3": 0.09,
+          "V4": null,
+          "V5": 0.7,
+          "V6": 3.02
+        },
+        "qrs_muster": {
+          "V1": "qR",
+          "V2": "rS",
+          "V3": "rS",
+          "V4": "QS",
+          "V5": "rS",
+          "V6": "Rs"
+        },
+        "rs_umschlag": "V1",
+        "rs_umschlag_normal": false,
+        "r_progression_normal": false,
+        "s_persistenz_v6": true,
+        "s_amplitude_v6_mv": 0.36
+      },
+      "st_strecke": {
+        "beurteilbar": true,
+        "messpunkt": "J-Punkt + 60 ms",
+        "abweichung_mv": {
+          "I": -0.37,
+          "II": -0.07,
+          "III": 0.3,
+          "aVR": 0.22,
+          "aVL": -0.34,
+          "aVF": 0.11,
+          "V1": 0.56,
+          "V2": 0.88,
+          "V3": 0.76,
+          "V4": 0.17,
+          "V5": -0.13,
+          "V6": -0.42
+        },
+        "hebungen": [
+          "III",
+          "aVR",
+          "aVF",
+          "V1",
+          "V2",
+          "V3",
+          "V4"
+        ],
+        "senkungen": [
+          "I",
+          "aVL",
+          "V5",
+          "V6"
+        ],
+        "hebung_gruppen": [
+          "inferior",
+          "anteroseptal"
+        ],
+        "senkung_gruppen": [
+          "lateral"
+        ],
+        "relevante_hebung": true,
+        "relevante_senkung": true
+      },
+      "t_wellen": {
+        "beurteilbar": true,
+        "t_amplituden_mv": {
+          "I": -0.16,
+          "II": 0.17,
+          "III": 0.32,
+          "aVR": -0.0,
+          "aVL": -0.24,
+          "aVF": 0.25,
+          "V1": 0.4,
+          "V2": 0.83,
+          "V3": 0.85,
+          "V4": 0.35,
+          "V5": 0.14,
+          "V6": -0.25
+        },
+        "negative_ableitungen": [
+          "I",
+          "aVL",
+          "V6"
+        ],
+        "pathologisch_negativ": [
+          "I",
+          "aVL",
+          "V6"
+        ],
+        "betroffene_gruppen": [
+          "lateral"
+        ],
+        "relevante_negativierung": true
+      },
+      "beurteilbar": true
+    },
+    "diagnose": {
+      "formulierungen": [
+        "Nachweis eines kompletten Linksschenkelblocks"
+      ],
+      "gemeldet": [
+        {
+          "klasse": "CLBBB",
+          "bezeichnung": "kompletter Linksschenkelblock",
+          "p": 1.0,
+          "stufe": "sicher",
+          "ebene": "zielklasse"
+        }
+      ],
+      "konfidenz_gating": [],
+      "verworfen": []
+    },
+    "true_classes": [
+      "CLBBB"
+    ],
+    "qualitaetssicherung": {
+      "resnet_probabilities": {
+        "CLBBB": 1.0,
+        "LVH": 0.3
+      },
+      "confidence": "hoch",
+      "befund_schwelle": 0.5,
+      "gating_schwelle": 0.65
+    },
+    "qrs_kreuzpruefung": {
+      "messweg_ableitung_II_ms": 83.4,
+      "messweg_12_ableitungen_ms": null,
+      "verwertbar": false,
+      "grund": "zweiter Messweg (12-Ableitungs-Betrag) ohne Ergebnis — typisch bei Schenkelblock, wo die Repolarisation nahtlos in den Kammerkomplex übergeht"
+    },
+    "pipeline_stage": "stufe_1_output_v2",
+    "plausibility": {
+      "pro_parameter": {
+        "hr_bpm": {
+          "value": 70.0,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "normal",
+          "kommentar": "Herzfrequenz 70.0 bpm (normal)."
+        },
+        "pr_interval_ms": {
+          "value": 156.2,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "normal",
+          "kommentar": "PQ-Intervall 156.2 ms (normal)."
+        },
+        "qrs_duration_ms": {
+          "value": 83.4,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "normal",
+          "kommentar": "QRS-Dauer 83.4 ms (normal)."
+        },
+        "qt_interval_ms": {
+          "value": 377.4,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "normal",
+          "kommentar": "QT-Intervall 377.4 ms (normal)."
+        },
+        "qtc_bazett_ms": {
+          "value": 407.7,
+          "plausibel": true,
+          "verwertbar": true,
+          "status": "ok",
+          "ref_status": "normal",
+          "kommentar": "QTc (Bazett) 407.7 ms (normal)."
+        }
+      },
+      "warnungen": [],
+      "artefakte": [],
+      "n_artefakte": 0,
+      "alle_verwertbar": true
+    },
+    "classical_features_verwertbar": {
+      "hr_bpm": 70.0,
+      "pr_interval_ms": 156.2,
+      "qrs_duration_ms": null,
+      "qt_interval_ms": 377.4,
+      "qtc_bazett_ms": 407.7
+    }
+  }
+]
