@@ -181,10 +181,15 @@ etwa eine Stunde.
 ## Stand und bekannte Grenzen
 
 - **QRS-Dauer unzuverlässig.** Zwei unabhängige Messverfahren weichen im
-  Median um 57 ms voneinander ab. Die eingebaute Kreuzprüfung
-  (`pruefe_qrs_dauer` in `build_fact_set_v2.py`) verwirft daher rund zwei
-  Drittel dieser Werte, statt eine falsche Zahl in den Befund zu
-  schreiben. Siehe `PROJEKT_DOKUMENTATION.md`, Abschnitt 13.
+  Median um 57 ms voneinander ab (Maximum 209 ms); das Verfahren über die
+  Delineation der Ableitung II liefert bei EKGs ohne Blockbild vereinzelt
+  Werte von 180 bis 270 ms. Eine reine Bereichsprüfung kann das nicht
+  erkennen, da solche Werte physiologisch möglich sind — nur eben nicht für
+  das jeweilige EKG. Die eingebaute Kreuzprüfung (`pruefe_qrs_dauer` in
+  `build_fact_set_v2.py`) stellt daher beide Messwege gegeneinander und
+  verwirft bei Widerspruch den Wert, statt eine falsche Zahl in den Befund zu
+  schreiben. In einer Stichprobe von 20 EKGs betraf das 13 Fälle. Eine
+  belastbare QRS-Bestimmung ist der derzeit dringlichste offene Punkt.
 - **Grenzwerte noch ohne Literaturbeleg.** Die Schwellen für Pardée-Q,
   ST-Hebung und Lagetyp sind nach gängiger klinischer Konvention gesetzt
   und im Code als belegpflichtig markiert.
